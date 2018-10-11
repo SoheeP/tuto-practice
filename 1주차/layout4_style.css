@@ -1,0 +1,54 @@
+@charset "utf-8";
+
+body, div, p, figure, figcaption, img, a {
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+}
+.wrapper{
+  width: calc(100% - 20%);
+  margin: 0 auto;
+}
+.top{
+  width: 50%;
+  height: 150px;
+  background-color: #f6b250;
+  cursor: pointer;
+}
+.top:hover {
+  background-color: #4559bd;
+  transition: background-color .3s ease-in-out;
+}
+.section{
+  width: 100%;
+  position: relative;
+}
+.aside{
+  width: 40%;
+  float: left;
+}
+.aside figure{
+  width: 100%;
+}
+.aside figure img{
+  display: block;
+  width: 100%;
+}
+.aside figure figcaption{
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2em;
+  background-color: bisque;
+  line-height: 3;
+}
+.right{
+ float: right;
+}
+.right:after{
+  display: block;
+  content: '';
+  clear: both;
+}
