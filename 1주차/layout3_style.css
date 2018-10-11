@@ -1,1 +1,45 @@
 @charset "utf-8";
+
+body, div, p{
+  margin: 0;
+  padding: 0;
+}
+.wrap{
+  width:80%;
+  margin:0 auto;
+}
+.center{
+  position: relative;
+  display: inline-block;
+  margin-top: 10%;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  width: 30%;
+  height: 500px
+}
+.center:first-child{
+  margin-right:10%;
+  vertical-align: top;
+}
+.center p{
+  width: 50%;
+  height: 250px;
+  margin: 100px auto;
+  border: 1px solid #d31145;
+  box-sizing: border-box;
+  text-align: center;
+}
+.center div{
+  position: absolute;
+  width: 40%;
+  height: 100px;
+  background-color: #ebba6e;
+}
+.center .top{
+  top: 0;
+  left: 0;
+}
+.center .bottom{
+  bottom: 0;
+  right: 0;
+}
