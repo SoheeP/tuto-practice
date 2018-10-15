@@ -1,0 +1,103 @@
+@charset "utf-8";
+
+body,
+div,
+header,
+nav,
+ul,
+li,
+a,
+img,
+p,
+span,
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+img {
+  border: 0;
+}
+
+.wrap {
+  width: calc(100% - 0px);
+  margin: 0 auto;
+}
+
+header {
+  width: 15%;
+}
+
+nav {
+  position: fixed;
+  top: 5%;
+  left: 5%;
+  width: 10%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  filter: opacity(0.8);
+  z-index: 10;
+}
+
+h1 {
+  font-size: 1.2em;
+  padding-bottom: 10px;
+}
+
+nav ul li{
+  margin: 5px 0;
+}
+nav ul li a {
+  color: #111212;
+  width: 100%;
+  margin: 5px 0;
+  font-size: .8em;
+  box-sizing: border-box;
+  border-bottom: 1px solid transparent;
+}
+
+nav ul li a:active,
+nav ul li a:hover{
+  border-bottom: 1px solid #111212;
+}
+
+.full{
+  position: relative;
+  width: 100%;
+  min-height: 768px;
+  background-image: url(img/window-3178666.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 20% 60%;
+}
+.section__p{
+  position: absolute;
+  left: 10%;
+  bottom: 10%;
+  color: #fff;
+}
+.side{
+  width: 45%;
+  min-height: 500px;
+  display: inline-block;
+}
+.section .side:first-child{
+  background-image: url(img/the-landscape-1950544.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.section .side:last-child{
+  background-image: url(img/tree-3111916.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
