@@ -77,13 +77,16 @@ nav ul li a:hover{
   min-height: 768px;
   background-image: url(img/window-3178666.jpg);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   background-position: 20% 60%;
+}
+.mobile__p{
+  display:none;
 }
 .section__p{
   position: absolute;
   left: 10%;
-  bottom: 10%;
+  bottom: 0;
   color: #fff;
 }
 .side{
@@ -118,7 +121,92 @@ nav ul li a:hover{
 .filter p{
   color: #fff;
   font-size: 1.2em;
+  text-align: center;
+}
+.side_left .filter div{
+  width: 80%;
+  margin: 100px auto;
+}
+.side_right .filter p{
+  text-align: left;
+  width: 80%;
+  margin: 20px auto;
+}
+.side_right .filter p::before{
+  display: block;
+  content: 'CC';
+  width: 50px;
+  height: 50px;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  text-align: center;
+  border-radius: 50%;
 }
 h3{
   color:#fff;
+  font-size: 1.5em;
+  text-align: center;
+}
+@media screen and (max-width:1024px){
+  nav{
+    width: 15%;
+  }
+  .full{
+    background-image: url(img/nature-3326745.jpg);
+  }
+  .section__p{
+    display: none;
+  }
+}
+@media screen and (max-width:710px){
+  nav{
+    width: 20%;
+  }
+}
+@media screen and (max-width:640px){
+  .wrap{
+    background-color: #000;
+  }
+  header{
+    width: 100%;
+  }
+  nav{
+    position: relative;
+    width: 100%;
+    display: block;
+    top: 0;
+    left: 0;
+    filter: opacity(1);
+  }
+  nav ul li{
+    display: inline-block;
+    width: 18%;
+    text-align: center;
+  }
+  .full{
+    min-height: 380px;
+  }
+  .mobile__p{
+    display: block;
+    color:#fff;
+    padding-bottom: 20px;
+    font-size: 1.3em;
+    line-height: 1.5;
+  }
+  .section__p{
+    position: relative;
+    left: 0;
+    display: block;
+    width: 100%;
+    background-color: #fff;
+    line-height: 1.5;
+    color: #000;
+    }
+  .side{
+    display: block;
+    width:100%;
+  }
+  .filter{
+    position: relative;
+  }
 }
