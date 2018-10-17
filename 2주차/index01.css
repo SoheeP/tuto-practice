@@ -164,8 +164,11 @@ h3{
   }
 }
 @media screen and (max-width:640px){
-  .wrap{
+  body{
     background-color: #000;
+  }
+  .wrap{
+    width: calc(100% - 30px);
   }
   header{
     width: 100%;
@@ -175,7 +178,7 @@ h3{
     width: 100%;
     display: block;
     top: 0;
-    left: 0;
+    left: -20px;
     filter: opacity(1);
   }
   nav ul li{
@@ -208,5 +211,28 @@ h3{
   }
   .filter{
     position: relative;
+  }
+  .side_left .filter>*{
+    display: none;
+  }
+  .side_left + .mobile__p{
+    background-color: #fff;
+    color: #000;
+  }
+  .side_right{
+    background-image: none;
+    background-color: #fff;
+  }
+  .side_right .filter p{
+    color: #000;
+  }
+  .side_right .filter p::before{
+    border-color: #000;
+  }
+}
+@media screen and (max-width:580px){
+  nav ul li{
+    width: 100%;
+    text-align: left;
   }
 }

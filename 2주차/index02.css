@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+body, div, a, p, span, img,{
+  margin: 0;
+  padding: 0;
+}
+.wrap{
+  width: 80%;
+  margin: 0 auto;
+}
+a{
+  text-decoration: none;
+}
