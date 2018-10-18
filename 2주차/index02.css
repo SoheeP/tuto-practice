@@ -1,13 +1,77 @@
 @charset "utf-8";
 
-body, div, a, p, span, img,{
+body,
+div,
+a,
+p,
+span,
+img,
+ul,
+li {
   margin: 0;
   padding: 0;
 }
-.wrap{
+
+.wrap {
   width: 80%;
   margin: 0 auto;
 }
-a{
+
+a {
   text-decoration: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 10%;
+  background-color: #fff;
+  z-index: 10;
+}
+
+.nav_wrap {
+  width: 80%;
+  margin: 0 auto;
+}
+
+h1 img {
+  display: block;
+  width: 100%;
+}
+
+section {
+  position: relative;
+}
+
+section img {
+  display: block;
+  width: 100%;
+  max-height: 620px;
+}
+
+section .text_wrap {
+  position: absolute;
+  top: 67%;
+  left: 0;
+}
+
+section .text_wrap p {
+  font-size: 1.2em;
+  line-height: 1.7;
+}
+
+p.white {
+  background-color: #fff;
+  width: calc(100% - 30%);
+}
+
+p.black {
+  background-color: #000;
+  color: #fff;
 }
