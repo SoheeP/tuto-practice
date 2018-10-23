@@ -1,0 +1,66 @@
+@charset "utf-8";
+
+*{
+  margin: 0;
+  padding: 0;
+}
+.wrap{
+  width:100%;
+  margin: 0 auto;
+}
+.signal{
+  position: relative;
+  width:450px;
+  height: 300px;
+  margin: 0 auto;
+}
+.signal_body{
+  background-color: black;
+  width: 100%;  
+  border-radius: 40px;
+}
+
+.lamp{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 20px 15px;
+  opacity: 0.2;
+}
+.light1{
+  border:1px solid red;
+  background-color: red;
+}
+.light2{
+  border: 1px solid yellow;
+  background-color: yellow;
+}
+.light3{
+  border: 1px solid green;
+  background-color: green;
+}
+.light1:hover, .light2:hover, .light3:hover{
+  animation: light 2s linear forwards;
+}
+.signal_long{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 30px;
+  height: 200px;
+  background-color: black;
+}
+
+@keyframes light{
+  0%{
+    opacity: 0.2;
+  }
+  50%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0.2;
+  }
+}
