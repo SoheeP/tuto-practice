@@ -45,6 +45,7 @@
 }
 .signal_body:hover .all_light{
   animation-play-state: paused;
+  z-index: -1;
 }
 .light1:hover, .light2:hover, .light3:hover{
   animation: light 2s linear forwards;
