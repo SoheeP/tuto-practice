@@ -29,17 +29,22 @@
   margin: 20px 15px;
   opacity: 0.2;
 }
+.all_light{
+  position: absolute;
+  background-color: transparent;
+  animation: all_light 8s linear infinite;
+}
 .light1{
-  border:1px solid red;
   background-color: red;
 }
 .light2{
-  border: 1px solid yellow;
   background-color: yellow;
 }
 .light3{
-  border: 1px solid green;
   background-color: green;
+}
+.signal_body:hover .all_light{
+  animation-play-state: paused;
 }
 .light1:hover, .light2:hover, .light3:hover{
   animation: light 2s linear forwards;
@@ -52,7 +57,23 @@
   height: 200px;
   background-color: black;
 }
-
+.play_button{
+  width: 80%;
+  margin: 0 auto;
+}
+.play, .pause{
+  width: 100px;
+  height: 30px;
+  box-shadow: none;
+  background-color: #ddd;
+  border-style: none;
+}
+.play:active .all_light{
+  animation-play-state: running;
+}
+.pause:active .all_light{
+  animation-play-state: paused;
+}
 @keyframes light{
   0%{
     opacity: 0.2;
@@ -62,5 +83,47 @@
   }
   100%{
     opacity: 0.2;
+  }
+}
+@keyframes all_light{
+  0%{
+    left: 0;
+    background-color:transparent;
+    opacity: 0.2;
+  }
+  12.5%{
+    left: 0;
+    background-color: red;
+    opacity: 1;
+  }
+  25%{
+    left: 0;
+    opacity: 0;
+  }
+  37.5%{
+    left: 135px;
+    opacity: 0;
+  }
+  50%{
+    left: 135px;
+    background-color: yellow;
+    opacity: 1;
+  }
+  62.5%{
+    left: 135px;
+    opacity: 0;
+  }
+  75%{
+    left: 270px;
+    opacity: 0;
+  }
+  87.5%{
+    left: 270px;
+    background-color: green;
+    opacity: 1;
+  }
+  100%{
+    left: 270px;
+    opacity: 0;
   }
 }
