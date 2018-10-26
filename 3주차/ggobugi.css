@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.wrap{
+  width: 80%;
+  margin: 0 auto;
+}
+.face_wrap{
+  width: 400px;
+  height: 300px;
+  border-radius: 220px 220px 100px 100px;
+  background-color: darkcyan;
+}
+.eye_wrap{
+  position: relative;
+}
+.eye{
+  width: 80px;
+  height: 120px;
+  position: absolute;
+  top: 70px;
+  border-radius: 100px 100px 50px 50px;
+  background-color: black;
+}
+.eye::before{
+  position: absolute;
+  top: 0px;
+  right: 0;
+  display: block;
+  content: '';
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.left{
+  left: 30px;
+}
+.right{
+  right: 30px;
+}
