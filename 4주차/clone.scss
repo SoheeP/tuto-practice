@@ -19,16 +19,60 @@ ol {
   width: 1140px;
   margin: auto;
 }
+.back_ani{
+  background-color: #000;
+}
 .trans{
   h1{
-    
+    color:#fff;
+    font-size: 5em;
+    text-align: center;
+    text-transform: capitalize;
+  }
+  p{
+    color:#fff;
+    font-size: 1.9em;
+    font-weight: bold;
+    text-align: center;
+  }
+}
+.text_wrap{
+  padding:50px 0;
+}
+.img_100{
+  position: relative;
+  img{
+    width: 100%;
+  }
+  p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.8em;
+    text-transform: capitalize;
+    font-weight: bold;
   }
 }
 section {
   background-color: gray;
   padding-top: 30px;
 }
-
+.process{
+  .top{
+    padding: 50px 0;
+    background-color: #fff;
+    h1{
+      color:#000;
+    }
+  }
+  .text_wrap{
+    background-color: #ddd;
+  }
+  p{
+    color:#999;
+  }
+}
 .black {
   background-color: #000;
 
