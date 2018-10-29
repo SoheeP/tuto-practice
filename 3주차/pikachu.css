@@ -1,0 +1,121 @@
+@charset "utf-8";
+
+*{
+  margin: 0;
+  padding: 0;
+}
+.wrap{
+  width: 60%;
+  margin: 20px auto 0 auto;
+}
+
+.yellow{
+  background-color: yellow;
+}
+.black{
+  background-color: black;
+}
+
+.ear_wrap_left{
+  position: absolute;
+  top: -52px;
+  left: 191px;
+  width: 30%;
+  transform: rotate(-30deg);
+}
+.ear{
+  position: relative;
+  width: 55px;
+  height: 200px;
+  border-top-right-radius: 140px 300px;
+  border-bottom-left-radius: 140px 240px;
+  overflow: hidden;
+}
+.ear_edge{
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 160px;
+  bottom: 0;
+  border-top-left-radius: 80px;
+}
+.ear_wrap_right{
+  width: 30%;
+  transform: scaleX(-1);
+}
+.face_wrap{
+  position: relative;
+  top: -51px;
+  left: -17px;
+  width: 250px;
+  height: 230px;
+  border-top-left-radius: 111px 120px;
+  border-top-right-radius: 111px 120px;
+  border-bottom-left-radius: 100px 70px;
+  border-bottom-right-radius: 100px 70px;
+  background-color: yellow;
+}
+.eye{
+  position: absolute;
+  top: 100px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #000;
+}
+.pupil{
+  position: absolute;
+  top: 2px;
+  right: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.left{
+  left: 50px;
+}
+.right{
+  right: 50px;
+}
+.nose{
+  position: absolute;
+  left: 115px;
+  bottom: 80px;
+  width: 0px;
+  height: 0px;
+  border-top: 5px solid #000;
+  border-right: 6px solid transparent;
+  border-left:6px solid transparent;
+  border-radius: 2px;
+}
+.chick_wrap{
+  position: relative;
+  top: 0;
+}
+.chick{
+  position: absolute;
+  top: 137px;
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: orangered;
+}
+.chick.left{
+  left:0;
+}
+.chick.right{
+  right: 0;
+}
+.mouth{
+  position: absolute;
+  bottom: 24px;
+  left: 90px;
+  width: 0;
+  height: 0;
+  border-top: 40px solid palevioletred;
+  border-right: 30px solid transparent;
+  border-left: 30px solid transparent
+}
