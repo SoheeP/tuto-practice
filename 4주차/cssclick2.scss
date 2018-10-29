@@ -1,0 +1,100 @@
+.click1{
+  label{
+    display: block;
+    width: 100px;
+    height: 30px;
+    background-color: antiquewhite;
+    box-sizing: border-box;
+    border: 1px solid antiquewhite;
+    text-align: center;
+    cursor: pointer;
+  }
+  input{
+    display: none;
+    &:checked + .opacity_0{
+      opacity: 1;
+    }
+  }
+  .opacity_0{
+    width: 100px;
+    height: 100px;
+    background-color: violet;
+    opacity: 0;
+    transition: all .5s ease-in;
+  }
+}
+
+.click2{
+  label{
+    display: inline-block;
+    width: 150px;
+    height: 40px;
+    &:first-child{
+      background-color: aquamarine;
+    }
+    &:last-child{
+      background-color: palegreen;
+    }
+  }
+  input{
+    display: none;
+  }
+  .box{
+    width: 100px;
+    height: 100px;
+    background-color: #d31145;
+    opacity: 0;
+    transition: all .5s ease-in;
+  }
+  
+  #opacity2:checked ~ .show_me{
+    opacity: 1;
+  }
+  #right:checked ~ .right_me{
+    opacity: 1;
+    margin-left: 20px;
+  }
+}
+
+.click3{
+  label{
+    display: block;
+    float: left;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+  }
+  .tab_wrap::after{
+    display: block;
+    content: '';
+    clear: both;
+  }
+  .tab_content{
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background-color: #ddd;
+    border:1px solid #ddd;
+    box-sizing: border-box;
+    input{
+      display: none;
+    }
+    p{
+      position: absolute;
+      top: 0;
+      left: 0;
+      display:none;
+    }
+    input:checked + p{
+      display: block;
+    }
+  }
+}
+$s10 : 10px;
+.test{
+  display: none;
+  font: {
+    size: $s10;
+    weight: bold;
+    family: '굴림', sans-serif;
+  }
+}

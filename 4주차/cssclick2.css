@@ -1,0 +1,82 @@
+@charset "UTF-8";
+.click1 label {
+  display: block;
+  width: 100px;
+  height: 30px;
+  background-color: antiquewhite;
+  box-sizing: border-box;
+  border: 1px solid antiquewhite;
+  text-align: center;
+  cursor: pointer; }
+
+.click1 input {
+  display: none; }
+  .click1 input:checked + .opacity_0 {
+    opacity: 1; }
+
+.click1 .opacity_0 {
+  width: 100px;
+  height: 100px;
+  background-color: violet;
+  opacity: 0;
+  transition: all .5s ease-in; }
+
+.click2 label {
+  display: inline-block;
+  width: 150px;
+  height: 40px; }
+  .click2 label:first-child {
+    background-color: aquamarine; }
+  .click2 label:last-child {
+    background-color: palegreen; }
+
+.click2 input {
+  display: none; }
+
+.click2 .box {
+  width: 100px;
+  height: 100px;
+  background-color: #d31145;
+  opacity: 0;
+  transition: all .5s ease-in; }
+
+.click2 #opacity2:checked ~ .show_me {
+  opacity: 1; }
+
+.click2 #right:checked ~ .right_me {
+  opacity: 1;
+  margin-left: 20px; }
+
+.click3 label {
+  display: block;
+  float: left;
+  box-sizing: border-box;
+  border: 1px solid #ddd; }
+
+.click3 .tab_wrap::after {
+  display: block;
+  content: '';
+  clear: both; }
+
+.click3 .tab_content {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  background-color: #ddd;
+  border: 1px solid #ddd;
+  box-sizing: border-box; }
+  .click3 .tab_content input {
+    display: none; }
+  .click3 .tab_content p {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none; }
+  .click3 .tab_content input:checked + p {
+    display: block; }
+
+.test {
+  display: none;
+  font-size: 10px;
+  font-weight: bold;
+  font-family: '굴림', sans-serif; }
