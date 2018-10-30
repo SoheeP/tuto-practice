@@ -12,6 +12,13 @@
   border-radius: 180px 180px 100px 100px;
   background-color: darkcyan; }
 
+.two_eye {
+  position: relative; }
+  .two_eye::after {
+    display: block;
+    content: '';
+    clear: both; }
+
 .eye_wrap {
   position: relative;
   top: 70px;
@@ -99,3 +106,13 @@
 .right {
   float: right;
   right: 30px; }
+
+.nose {
+  position: relative; }
+  .nose::before, .nose::after {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 5px;
+    height: 0;
+    border-top: 1px solid #000; }
