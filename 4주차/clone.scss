@@ -20,7 +20,20 @@ ol {
   margin: auto;
 }
 .back_ani{
-  background-color: #000;
+  background: {
+    image:url(https://lonelyplanetwpnews.imgix.net/2018/02/1st-Max-Rive-8396.jpg);
+    size: cover;
+    position:left top;
+  }
+  animation: {
+    name: back;
+    duration: 60s;
+    timing-function: linear;
+    delay: 5s;
+    iteration-count: infinite;
+    direction: alternate;
+
+  }
 }
 .trans{
   h1{
@@ -54,6 +67,21 @@ ol {
     font-weight: bold;
   }
 }
+.video{
+  position: relative;
+  padding: {
+    bottom: 25.25%;
+    top: 30px;
+  }
+  margin-top: 1.2em;
+  height: 0;
+  overflow: hidden;
+  iframe, object, embed{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}
 section {
   background-color: gray;
   padding-top: 30px;
@@ -70,7 +98,11 @@ section {
     background-color: #ddd;
   }
   p{
-    color:#999;
+    color:#727272;
+    &::selection, &::-moz-selection{
+      background-color: #333;
+      color:#fff;
+    }
   }
 }
 .black {
@@ -124,4 +156,13 @@ section {
     text-align: center;
   }
   
+}
+
+@keyframes back{
+  0%{
+    background-position: left top;
+  };
+  100%{
+    background-position: center top;
+  };
 }
