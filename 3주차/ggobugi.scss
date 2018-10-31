@@ -169,9 +169,11 @@
 .mouth_wrap{
   position: relative;
   width: 65%;
-  height: 100%;
+  height: 100px;
   margin: auto;
   top: 58px;
+  overflow: hidden;
+  background-color:#a55656;
   border-bottom-left-radius: 35px;
   border-bottom-right-radius: 35px;
   .mouth_top{
@@ -186,7 +188,19 @@
       style: solid;
     }
   }
-  .right.mouth_top{
+  .m_left{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+  }
+  .m_right{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 5;
+  }
+  .m_right.mouth_top{
     transform: rotateY(-180deg);
     &::before{
       display: block;
@@ -198,20 +212,39 @@
     position: absolute;
     width: 100%;
     height: 100px;
-    background-color:#a55656;
-    overflow: hidden;
+    // background-color:#a55656;
     border-bottom: {
       left-radius: 30px;
       right-radius: 30px;
     }
   }
-  .black{
+  .abs_left_wrap{
+    position: absolute;
+    left: 0;
+    top: 50px;
+  }
+  .abs_right_wrap{
+    position: absolute;
+    right: 0;
+    top: 50px;
+  }
+  .black_abs{
     width: 30px;
-    height: 10px;
+    height: 30px;
     background-color: #000;
   }
-  .abs_left{
-    position: absolute;
+  .left_top{
+    left: 0;
+  }
+  .left_bottom{
+    left: 0;
+  }
+  .right_top{
+    border-bottom-left-radius: 30px;
+    transform: rotateY(0deg);
+  }
+  .right_bottom{
+    right: 0;
   }
   .mouth_bottom{
     position: absolute;
