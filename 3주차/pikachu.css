@@ -18,9 +18,7 @@
 
 .ear_wrap_left{
   position: absolute;
-  top: -52px;
-  left: 191px;
-  width: 30%;
+  width: 282px;
   transform: rotate(-30deg);
 }
 .ear{
@@ -40,13 +38,13 @@
   border-top-left-radius: 80px;
 }
 .ear_wrap_right{
-  width: 30%;
+  position: relative;
+  top: 42px;
+  width: 230px;
   transform: scaleX(-1);
 }
 .face_wrap{
-  position: relative;
-  top: -51px;
-  left: -17px;
+  position: absolute;
   width: 250px;
   height: 230px;
   border-top-left-radius: 111px 120px;
@@ -109,13 +107,34 @@
 .chick.right{
   right: 0;
 }
-.mouth{
+.mouth_wrap{
   position: absolute;
-  bottom: 24px;
-  left: 90px;
-  width: 0;
-  height: 0;
-  border-top: 40px solid palevioletred;
-  border-right: 30px solid transparent;
-  border-left: 30px solid transparent
+  bottom:0;
+  left: 71px;
+  width: 100px;
+  height: 68px;
+  background-color: palevioletred;
+  border-bottom-right-radius: 80px;
+  border-bottom-left-radius: 91px;
 }
+ .m_right {
+  position: absolute;
+  bottom: 40px;
+  right: 69px;
+  z-index: 5;
+}
+ .m_left {
+  position: absolute;
+  bottom:40px;
+  left: 69px;
+  z-index: 5;
+}
+.mouth_top {
+  width: 58px;
+  height: 30px;
+  background-color: yellow;
+  border-bottom-left-radius: 19px;
+  border-bottom-right-radius: 50%;
+  border-bottom-color: #000;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
