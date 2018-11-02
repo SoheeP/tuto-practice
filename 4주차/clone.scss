@@ -38,19 +38,20 @@ ol {
 .trans{
   h1{
     color:#fff;
-    font-size: 5em;
+    font-size: 4.6em;
+    letter-spacing: -1px;
     text-align: center;
     text-transform: capitalize;
   }
   p{
     color:#fff;
-    font-size: 1.9em;
-    font-weight: bold;
+    font-size: 1.2em;
+    font-weight: 500;
     text-align: center;
   }
 }
 .text_wrap{
-  padding:50px 0;
+  padding:80px 0 50px;
 }
 .img_100{
   position: relative;
@@ -156,6 +157,10 @@ section {
     text-align: center;
   }
   
+}
+
+.content_wrap{
+  width: 100%;
 }
 
 @keyframes back{
