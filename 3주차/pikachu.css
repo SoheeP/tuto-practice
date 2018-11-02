@@ -22,6 +22,9 @@
   position: absolute;
   width: 282px;
   transform: rotate(-30deg);
+  -ms-transform: translateX(-50%); /* IE 9 */
+  -webkit-transform: translateX(-50%); /* Safari 3-8 */
+  transform: translateX(-50%);
 }
 
 .ear {
@@ -46,6 +49,9 @@
   position: relative;
   top: 42px;
   width: 230px;
+  transform: scaleX(-1);
+  -ms-transform: scaleX(-1); /* IE 9 */
+  -webkit-transform: scaleX(-1); /* Safari 3-8 */
   transform: scaleX(-1);
 }
 
@@ -128,18 +134,21 @@
 .mouth_wrap {
   position: absolute;
   bottom: 0;
-  left: 74px;
+  left: 50%;
   width: 100px;
   height: 87px;
-  border-bottom-right-radius: 80px;
-  border-bottom-left-radius: 91px;
+  -ms-transform: translateX(-50%); /* IE 9 */
+  -webkit-transform: translateX(-50%); /* Safari 3-8 */
+  transform: translateX(-50%);
 }
 
 .m_right {
   position: absolute;
   right: 0;
   z-index: 5;
-  transform: rotateY(-180deg)
+  -ms-transform: rotateY(-180deg); /*IE 9*/
+  -webkit-transform: rotateY(-180deg);/*Safari 3-8*/
+  transform: rotateY(-180deg);
 }
 
 .m_left {
@@ -152,7 +161,7 @@
   width: 50px;
   height: 30px;
   background-color: yellow;
-  border-bottom-left-radius: 19px;
+  border-bottom-left-radius: 16px;
   border-bottom-right-radius: 50%;
   border-bottom-color: #000;
   border-bottom-width: 2px;
@@ -161,36 +170,49 @@
 
 .mouth_wrap .shadow {
   position: absolute;
-  width: 39px;
-  height: 26px;
+  top: 20px;
+  left: 50%;
+  width: 63px;
+  height: 66px;
   overflow: hidden;
-  border-top: 50px solid rgb(167, 66, 99);
-  border-left: 30px solid transparent;
-  border-right: 30px solid transparent;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  -ms-transform: translateX(-50%); /* IE 9 */
+  -webkit-transform: translateX(-50%); /* Safari 3-8 */
+  transform: translateX(-50%);
 }
-/* .shadow::before{
-  display: block;
+.inner_deep_shadow{
   position: absolute;
-  top: 0;
-  left: 50%;
-  width: 50px;
-  height: 100%;
-  transform: translateX(-50%);
-  border-top: 50px solid palevioletred;
-  border-left: 30px solid transparent;
-  border-right: 30px solid transparent;
-  content: '';
-} */
-.shadow::after{
-  display: block;
+  top: 20px;
+  width: 63px;
+  height: 120px;
+  border-radius: 50%;
+  box-shadow: 0 0px 0 30px rgb(148, 38, 75);
+  -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.inner_light_shadow{
   position: absolute;
-  bottom: 12px;
+  top: 36px;
   left: 50%;
-  width: 40px;
-  height: 23px;
-  transform: translateX(-50%);
+  width: 33px;
+  height: 16px;
+  border-radius: 30%;
+  -ms-transform: translateX(-50%) rotate(180deg);; /* IE 9 */
+  -webkit-transform: translateX(-50%) rotate(180deg);; /* Safari 3-8 */
+  transform: translateX(-50%) rotate(180deg);;
+  box-shadow: 0px 0px 0 22px rgb(201, 69, 113);
+}
+.inner_bottom_shadow{
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  width: 54px;
+  height: 45px;
+  border-radius: 45%;
   background-color: rgb(212, 105, 141);
-  border-bottom-left-radius: 25px;
-  border-bottom-right-radius: 25px;
-  content: '';
+  -ms-transform: translateX(-50%); /* IE 9 */
+  -webkit-transform: translateX(-50%); /* Safari 3-8 */
+  transform: translateX(-50%);
 }
