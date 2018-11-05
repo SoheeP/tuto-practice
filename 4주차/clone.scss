@@ -39,6 +39,7 @@ ol {
   h1{
     color:#fff;
     font-size: 4.6em;
+    font-family: 'Oswald', sans-serif;
     letter-spacing: -1px;
     text-align: center;
     text-transform: capitalize;
@@ -159,8 +160,18 @@ section {
   
 }
 
-.content_wrap{
+.container{
   width: 100%;
+  .content_wrap{
+    img{
+      width: 50%;
+    }
+  }
+  .caption{
+    &.white{
+      background-color: #fff;
+    }
+  }
 }
 
 @keyframes back{

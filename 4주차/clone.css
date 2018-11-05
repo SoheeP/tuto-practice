@@ -28,12 +28,13 @@ ol {
 .trans h1 {
   color: #fff;
   font-size: 4.6em;
+  letter-spacing: -1px;
   text-align: center;
   text-transform: capitalize; }
 
 .trans p {
   color: #fff;
-  font-size: 1.3em;
+  font-size: 1.2em;
   font-weight: 500;
   text-align: center; }
 
@@ -125,6 +126,13 @@ section {
     font-size: 0.75em;
     color: gray;
     text-align: center; }
+
+.container {
+  width: 100%; }
+  .container .content_wrap img {
+    width: 50%; }
+  .container .caption.white {
+    background-color: #fff; }
 
 @keyframes back {
   0% {
