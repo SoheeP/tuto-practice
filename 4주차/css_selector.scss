@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+div[class^="part"] {
+  width: 100%;
+  height: 500px;
+}
+.wrap{
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+.title {
+  font: {
+    size: 1.3em;
+    weight: bold;
+  }
+}
+
+input[id*="slide"] {
+  display: none;
+}
+
+input:checked + div{
+  display: block;
+}
+
+div.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  background: {
+    position: center center;
+    size: 100%;
+    repeat: no-repeat;
+  }
+  transition: all .3s ease-in-out;
+
+  &:first-of-type {
+    background-image: url('https://images.unsplash.com/photo-1541053476867-b02b2bd8ceeb?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9499013f4e313fbecc24289ea2b88465&auto=format&fit=crop&w=1050&q=80');
+  }
+
+  &:nth-of-type(2) {
+    background-image: url('https://images.unsplash.com/photo-1541111166270-2182253e5244?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=912eecd8eea767244764e6e81361d486&auto=format&fit=crop&w=1050&q=80');
+    display: none;
+  }
+
+  &:nth-of-type(3) {
+    background-image: url('https://images.unsplash.com/photo-1541102387691-6c263a16c763?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4a6de9ebb8419913f2af116925ea1815&auto=format&fit=crop&w=889&q=80');
+    display: none;
+  }
+
+  &:last-of-type {
+    background-image: url('https://images.unsplash.com/photo-1541058824243-30532c3d94fe?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b134e2254a3371999bc7a144c1ecdb57&auto=format&fit=crop&w=1040&q=80');
+    display: none;
+  }
+}
+
+.label_wrap {
+  position: relative;
+  bottom: 0;
+  width: 300px;
+  margin: auto;
+  label[for^="slide"] {
+    display: inline-block;
+    width: 50px;
+    height: 4px;
+    margin: 0 10px;
+    background-color: cadetblue;
+    cursor: pointer;
+  }
+}
+.part2{
+  q{
+    display: block;
+    text-transform: capitalize;
+    &::first-letter{
+      font-size: 1.3em;
+      color: blueviolet;
+      line-height: 1.5;
+    }
+    &::selection{
+      background-color: #666;
+      color: #fff;
+    }
+  }
+  blockquote::first-line{
+    background-color: darkkhaki;
+  }
+}
