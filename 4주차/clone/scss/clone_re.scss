@@ -1,0 +1,14 @@
+@import './component.scss';
+@import './vari.scss';
+
+.test{
+  width: 100px;
+  height: 100px;
+  background-color: #ddd;
+  &::after{
+    display: block;
+    @include test(100px, 100px);
+    color: $color;
+    content: 'OKOK'
+  }
+}

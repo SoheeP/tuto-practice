@@ -1,0 +1,10 @@
+.test {
+  width: 100px;
+  height: 100px;
+  background-color: #ddd; }
+  .test::after {
+    display: block;
+    width: 100px;
+    height: 100px;
+    color: #111111;
+    content: 'OKOK'; }
