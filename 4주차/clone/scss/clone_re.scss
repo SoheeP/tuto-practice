@@ -92,7 +92,6 @@ ol {
 
 .top {
   h1 {
-    padding-top: $padding;
     @include title(1.6em, #fff, capitalize, center);
     font-family: 'Oswald', sans-serif;
 
@@ -120,7 +119,7 @@ ol {
   background-color: #fff;
 
   .top {
-    padding: $wide_padding 0;
+    padding: $wide_padding+$padding 0 $wide_padding;
     h1 {
       color: #000;
       &::after{
@@ -156,7 +155,7 @@ ol {
   background-color: #000;
 }
 .container{
-  width: 1024px;
+  width: 1120px;
   margin: auto;
   .top{
     padding: $padding 0;
@@ -185,21 +184,67 @@ ol {
 }
 .content_wrap{
   width: 100%;
+  font-family: 'Roboto', sans-serif;
+  color: $caption_color;
   img{
     display: block;
-    float: left;
     width: 50%;
+  }
+  p.title{
+    @include title(1.8em, $caption_dark, none, left);
+    font-weight: 700;
+    padding: $wide_padding+$padding $padding $padding;
+  }
+  span{
+    display: block;
+    width: 80%;
+    padding: 0 $padding $padding;
+    line-height: 1.8;
+    font-weight: 300;
+    font-size: 1.1em;
+  }
+  &::after{
+    @include clear;
+  }
+  &:nth-of-type(2){
+    background-color: $caption_dark;
+    .title{
+      color: #fff;
+      text-align: right;
+    }
+    span{
+      text-align: right;
+    }
   }
   .caption{
     width: 50%;
+    height: 100%;
   }
 }
 .contents{
-  padding-top: $padding;
+  padding-top: $padding+$wide_padding;
+}
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
+.white{
+  background-color: #fff;
 }
 p.title{
   @include title(1.3em, #000, capitalize, left);
 }
+
+.footer{
+  width: 100%;
+  padding: $wide_padding 0;
+  p, i{
+    @include title(1.1em, $caption_color, none, center);
+  }
+}
+
 @keyframes back {
   0% {
     background-position: left top;

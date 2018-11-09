@@ -74,7 +74,6 @@ ol {
     left: 0; }
 
 .top h1 {
-  padding-top: 30px;
   font-size: 1.6em;
   color: #fff;
   text-transform: capitalize;
@@ -103,7 +102,7 @@ ol {
 .process {
   background-color: #fff; }
   .process .top {
-    padding: 50px 0; }
+    padding: 80px 0 50px; }
     .process .top h1 {
       color: #000; }
       .process .top h1::after {
@@ -130,7 +129,7 @@ ol {
   background-color: #000; }
 
 .container {
-  width: 1024px;
+  width: 1120px;
   margin: auto; }
   .container .top {
     padding: 30px 0; }
@@ -154,22 +153,67 @@ ol {
     content: ''; }
 
 .content_wrap {
-  width: 100%; }
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  color: #d0cece; }
   .content_wrap img {
     display: block;
-    float: left;
     width: 50%; }
+  .content_wrap p.title {
+    font-size: 1.8em;
+    color: #232323;
+    text-transform: none;
+    text-align: left;
+    font-weight: 700;
+    padding: 80px 30px 30px; }
+  .content_wrap span {
+    display: block;
+    width: 80%;
+    padding: 0 30px 30px;
+    line-height: 1.8;
+    font-weight: 300;
+    font-size: 1.1em; }
+  .content_wrap::after {
+    display: block;
+    clear: both;
+    content: ''; }
+  .content_wrap:nth-of-type(2) {
+    background-color: #232323; }
+    .content_wrap:nth-of-type(2) .title {
+      color: #fff;
+      text-align: right; }
+    .content_wrap:nth-of-type(2) span {
+      text-align: right; }
   .content_wrap .caption {
-    width: 50%; }
+    width: 50%;
+    height: 100%; }
 
 .contents {
-  padding-top: 30px; }
+  padding-top: 80px; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.white {
+  background-color: #fff; }
 
 p.title {
   font-size: 1.3em;
   color: #000;
   text-transform: capitalize;
   text-align: left; }
+
+.footer {
+  width: 100%;
+  padding: 50px 0; }
+  .footer p, .footer i {
+    font-size: 1.1em;
+    color: #d0cece;
+    text-transform: none;
+    text-align: center; }
 
 @keyframes back {
   0% {
