@@ -187,11 +187,13 @@ ol {
   width: 100%;
   img{
     display: block;
-    float: left;
     width: 50%;
   }
   .caption{
     width: 50%;
+  }
+  .right{
+    float: right;
   }
 }
 .contents{
