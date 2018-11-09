@@ -1,0 +1,21 @@
+@mixin title($fs, $color, $textType, $align) {
+  font-size: $fs;
+  color: $color;
+  text-transform: $textType;
+  text-align: $align;
+}
+@mixin position($pos, $top, $left){
+  position: $pos;
+  top: $top;
+  left: $left;
+}
+@mixin trans_center($pos_x, $pos_y) {
+  transform: translate(-$pos_x, -$pos_y);
+  -webkit-transform: translate(-$pos_x, -$pos_y);
+  -ms-transform: translate(-$pos_x, -$pos_y);
+}
+@mixin clear {
+  display: block;
+  clear: both;
+  content: '';
+}

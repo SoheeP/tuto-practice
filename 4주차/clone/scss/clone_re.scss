@@ -1,14 +1,213 @@
-@import './component.scss';
-@import './vari.scss';
+@import './_component';
+@import './_vari';
 
-.test{
-  width: 100px;
-  height: 100px;
-  background-color: #ddd;
-  &::after{
-    display: block;
-    @include test(100px, 100px);
-    color: $color;
-    content: 'OKOK'
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+li,
+ol {
+  list-style: none;
+}
+
+.wrap {
+  width: 1280px;
+  margin: auto;
+}
+
+.back_ani {
+  background: {
+    image: url(https://lonelyplanetwpnews.imgix.net/2018/02/1st-Max-Rive-8396.jpg);
+    size: cover;
+    position: left top;
   }
+
+  animation: {
+    name: back;
+    duration: 60s;
+    timing-function: linear;
+    delay: 5s;
+    iteration-count: infinite;
+    direction: alternate;
+  }
+}
+
+.header {
+  padding: 80px 0 50px;
+
+  h1 {
+    @include title(4.5em, #fff, capitalize, center);
+    letter-spacing: -1px;
+    font-kerning: normal;
+  }
+
+  p {
+    @include title(1.2em, #fff, none, center);
+    font-weight: 500;
+  }
+}
+
+.img_100 {
+  position: relative;
+
+  img {
+    width: 100%;
+  }
+
+  p {
+    @include position(absolute, 50%, 50%);
+    @include trans_center(50%, 50%);
+    @include title(1.8em, #fff, capitalize, center);
+    font-weight: bold;
+  }
+}
+
+.video {
+  position: relative;
+
+  padding: {
+    bottom: 25.25%;
+    top: 30px;
+  }
+
+  margin-top: 1.2em;
+  margin-bottom: -1.5em;
+  height: 0;
+  overflow: hidden;
+
+  iframe,
+  object,
+  embed {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.top {
+  h1 {
+    padding-top: $padding;
+    @include title(1.6em, #fff, capitalize, center);
+    font-family: 'Oswald', sans-serif;
+
+    &::after {
+      display: block;
+      content: '';
+      position: relative;
+      left: 50%;
+      width: 100px;
+      height: 1px;
+      @include trans_center(50%, 0);
+      margin: 10px 0 15px 0;
+    }
+  }
+
+  p {
+    @include title(.75em, #999, uppercase, center);
+    letter-spacing: 3px;
+    font-weight: 200;
+  }
+
+}
+
+.process {
+  background-color: #fff;
+
+  .top {
+    padding: $wide_padding 0;
+    h1 {
+      color: #000;
+      &::after{
+        background-color: $bgcolor;
+      }
+    }
+  }
+
+  .text_wrap {
+    width: 1216px;
+    padding: $wide_padding 32px;
+    background-color:$lightbg;
+    p {
+      font-family: 'Oswald', sans-serif;
+      color: #333;
+      font-weight: 200;
+      letter-spacing: .5px;
+
+      &::selection,
+      &::-moz-selection {
+        background-color: #333;
+        color: #fff;
+      }
+    }
+  }
+}
+.gray{
+  padding-top: $wide_padding;
+  position: relative;
+  background-color: $bgcolor;
+}
+.black{
+  background-color: #000;
+}
+.container{
+  width: 1024px;
+  margin: auto;
+  .top{
+    padding: $padding 0;
+    h1::after{
+      background-color: $lightbg;
+    }
+    p{
+      font-weight: bold;
+    }
+  }
+}
+.fig_wrap{
+  width: 100%;
+  overflow: hidden;
+  .top_img{
+    float: left;
+    width: 50%;
+    img{
+      display: block;
+      width: 100%;
+    }
+  }
+  &::after{
+    @include clear;
+  }
+}
+.content_wrap{
+  width: 100%;
+  img{
+    display: block;
+    float: left;
+    width: 50%;
+  }
+  .caption{
+    width: 50%;
+  }
+}
+.contents{
+  padding-top: $padding;
+}
+p.title{
+  @include title(1.3em, #000, capitalize, left);
+}
+@keyframes back {
+  0% {
+    background-position: left top;
+  }
+  ;
+
+  100% {
+    background-position: center top;
+  }
+  ;
 }

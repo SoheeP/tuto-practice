@@ -1,10 +1,178 @@
-.test {
-  width: 100px;
-  height: 100px;
-  background-color: #ddd; }
-  .test::after {
+* {
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none; }
+
+ul,
+li,
+ol {
+  list-style: none; }
+
+.wrap {
+  width: 1280px;
+  margin: auto; }
+
+.back_ani {
+  background-image: url(https://lonelyplanetwpnews.imgix.net/2018/02/1st-Max-Rive-8396.jpg);
+  background-size: cover;
+  background-position: left top;
+  animation-name: back;
+  animation-duration: 60s;
+  animation-timing-function: linear;
+  animation-delay: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate; }
+
+.header {
+  padding: 80px 0 50px; }
+  .header h1 {
+    font-size: 4.5em;
+    color: #fff;
+    text-transform: capitalize;
+    text-align: center;
+    letter-spacing: -1px;
+    font-kerning: normal; }
+  .header p {
+    font-size: 1.2em;
+    color: #fff;
+    text-transform: none;
+    text-align: center;
+    font-weight: 500; }
+
+.img_100 {
+  position: relative; }
+  .img_100 img {
+    width: 100%; }
+  .img_100 p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    font-size: 1.8em;
+    color: #fff;
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: bold; }
+
+.video {
+  position: relative;
+  padding-bottom: 25.25%;
+  padding-top: 30px;
+  margin-top: 1.2em;
+  margin-bottom: -1.5em;
+  height: 0;
+  overflow: hidden; }
+  .video iframe,
+  .video object,
+  .video embed {
+    position: absolute;
+    bottom: 0;
+    left: 0; }
+
+.top h1 {
+  padding-top: 30px;
+  font-size: 1.6em;
+  color: #fff;
+  text-transform: capitalize;
+  text-align: center;
+  font-family: 'Oswald', sans-serif; }
+  .top h1::after {
     display: block;
+    content: '';
+    position: relative;
+    left: 50%;
     width: 100px;
-    height: 100px;
-    color: #111111;
-    content: 'OKOK'; }
+    height: 1px;
+    transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    margin: 10px 0 15px 0; }
+
+.top p {
+  font-size: 0.75em;
+  color: #999;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  font-weight: 200; }
+
+.process {
+  background-color: #fff; }
+  .process .top {
+    padding: 50px 0; }
+    .process .top h1 {
+      color: #000; }
+      .process .top h1::after {
+        background-color: #313131; }
+  .process .text_wrap {
+    width: 1216px;
+    padding: 50px 32px;
+    background-color: #fbfbfb; }
+    .process .text_wrap p {
+      font-family: 'Oswald', sans-serif;
+      color: #333;
+      font-weight: 200;
+      letter-spacing: .5px; }
+      .process .text_wrap p::selection, .process .text_wrap p::-moz-selection {
+        background-color: #333;
+        color: #fff; }
+
+.gray {
+  padding-top: 50px;
+  position: relative;
+  background-color: #313131; }
+
+.black {
+  background-color: #000; }
+
+.container {
+  width: 1024px;
+  margin: auto; }
+  .container .top {
+    padding: 30px 0; }
+    .container .top h1::after {
+      background-color: #fbfbfb; }
+    .container .top p {
+      font-weight: bold; }
+
+.fig_wrap {
+  width: 100%;
+  overflow: hidden; }
+  .fig_wrap .top_img {
+    float: left;
+    width: 50%; }
+    .fig_wrap .top_img img {
+      display: block;
+      width: 100%; }
+  .fig_wrap::after {
+    display: block;
+    clear: both;
+    content: ''; }
+
+.content_wrap {
+  width: 100%; }
+  .content_wrap img {
+    display: block;
+    float: left;
+    width: 50%; }
+  .content_wrap .caption {
+    width: 50%; }
+
+.contents {
+  padding-top: 30px; }
+
+p.title {
+  font-size: 1.3em;
+  color: #000;
+  text-transform: capitalize;
+  text-align: left; }
+
+@keyframes back {
+  0% {
+    background-position: left top; }
+  100% {
+    background-position: center top; } }
