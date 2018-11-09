@@ -19,3 +19,8 @@
   clear: both;
   content: '';
 }
+@mixin hover($color){
+  &:hover{
+    color:$color;
+  }
+}

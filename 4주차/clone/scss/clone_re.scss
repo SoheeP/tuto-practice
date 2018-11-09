@@ -77,7 +77,7 @@ ol {
   }
 
   margin-top: 1.2em;
-  margin-bottom: -1.5em;
+  margin-bottom: .3em;
   height: 0;
   overflow: hidden;
 
@@ -129,13 +129,17 @@ ol {
   }
 
   .text_wrap {
-    width: 1216px;
-    padding: $wide_padding 32px;
+    width: 100%;
+    // width: 1216px;
+    padding: $WWide_padding 0px;
     background-color:$lightbg;
     p {
-      font-family: 'Oswald', sans-serif;
-      color: #333;
-      font-weight: 200;
+      width: 92%;
+      margin: auto;
+      font-family: 'Roboto', sans-serif;
+      color: $caption_color;
+      font-size: 0.95em;
+      font-weight: 300;
       letter-spacing: .5px;
 
       &::selection,
@@ -147,7 +151,7 @@ ol {
   }
 }
 .gray{
-  padding-top: $wide_padding;
+  padding: $wide_padding 0;
   position: relative;
   background-color: $bgcolor;
 }
@@ -157,8 +161,11 @@ ol {
 .container{
   width: 1120px;
   margin: auto;
+  &:nth-of-type(1){
+    margin-bottom: $padding;
+  }
   .top{
-    padding: $padding 0;
+    padding: $wide_padding 0;
     h1::after{
       background-color: $lightbg;
     }
@@ -190,18 +197,20 @@ ol {
     display: block;
     width: 50%;
   }
+  .c_wrap{
+    width: 82%;
+    margin: auto;
+  }
   p.title{
     @include title(1.8em, $caption_dark, none, left);
-    font-weight: 700;
-    padding: $wide_padding+$padding $padding $padding;
+    font-weight: 500;
+    padding: $wide_padding+$padding 0 $padding;
   }
   span{
     display: block;
-    width: 80%;
-    padding: 0 $padding $padding;
-    line-height: 1.8;
+    line-height: 1.6;
     font-weight: 300;
-    font-size: 1.1em;
+    font-size: 1.05em;
   }
   &::after{
     @include clear;
@@ -233,15 +242,28 @@ ol {
 .white{
   background-color: #fff;
 }
-p.title{
-  @include title(1.3em, #000, capitalize, left);
-}
+
 
 .footer{
   width: 100%;
   padding: $wide_padding 0;
-  p, i{
-    @include title(1.1em, $caption_color, none, center);
+  .icon{
+    margin: auto;
+    text-align: center;
+    
+  }
+  p{
+    @include title(1.1em, $footer_color, none, center);
+    padding-top: 20px;
+  }
+  a{
+    display: inline-block;
+    padding: 5px 4px 0px;
+    
+  }
+  ion-icon{
+    @include title(1.9em, $footer_color, none, center);
+    @include hover($lightbg);
   }
 }
 
@@ -255,4 +277,141 @@ p.title{
     background-position: center top;
   }
   ;
+}
+
+@media screen and (max-width:1280px){
+  .wrap{
+    width: 100%;
+  }
+  .process{
+    .text_wrap{
+      p{
+        width: 96%;
+      }
+    }
+  }
+   .container{
+    width: 84%;
+  }
+  .content_wrap{
+    .c_wrap{
+      width: 76%;
+    }
+    span{
+      line-height: 1em;
+    }
+  }
+}
+@media screen and (max-width:980px){
+  .wrap {
+    width: 96%;
+  }
+  
+  .header {
+    padding: 80px 0 50px;
+  
+    h1 {
+      @include title(2.5em, #fff, capitalize, center);
+    }
+  
+    p {
+      @include title(1.2em, #fff, none, center);
+    }
+  }
+  
+  .img_100 {  
+    p {
+      @include title(1.2em, #fff, capitalize, center);
+    }
+  }
+  
+  .video {
+    padding: {
+      bottom: 35.25%;
+    }
+  }
+  
+  .process {
+    .text_wrap {
+      p {
+        width: 90%;
+      }
+    }
+  }
+  .gray{
+    padding: $padding 0 8px;
+  }
+  .container{
+    width: 100%;
+  }
+  .fig_wrap{
+    width: 100%;
+    .top_img{
+      float: none;
+      width: 100%;
+    }
+  }
+  .content_wrap{
+    img{
+      display: block;
+      width: 100%;
+    }
+    .c_wrap{
+      width: 86%;
+    }
+    p.title{
+      @include title(1.8em, $caption_dark, none, center);
+      padding: $wide_padding 0 $padding;
+    }
+    span{
+      display: block;
+      line-height: 1.6;
+      font-weight: 300;
+      font-size: 1.05em;
+      text-align: center;
+      padding-bottom: $wide_padding;
+    }
+    &:nth-of-type(2){
+      .title{
+        text-align: center;
+      }
+      span{
+        text-align: center;
+      }
+    }
+    .caption{
+      width: 100%;
+    }
+  }
+  .contents{
+    padding-top: 10px;
+  }
+}
+@media screen and (max-width:768px){
+  .content_wrap{
+    .c_wrap{
+      width: 82%;
+    }
+  }
+}
+@media screen and (max-width:704px){
+  .content_wrap{
+    .c_wrap{
+      width: 78%;    }
+  }
+}
+
+@media screen and (max-width:658px){
+  .content_wrap{
+    .c_wrap{
+      width: 76%;
+    }
+  }
+}
+@media screen and (max-width:480px){
+  .content_wrap{
+    p.title{
+      padding: 40px 0 $padding;
+    }
+  }
 }
