@@ -1,0 +1,71 @@
+@import "scss/vari";
+@import "scss/component";
+
+h1{
+  color: red;
+}
+body{
+  color:$red;
+}
+.abc{
+  color: $red;
+  background: $mainBg;
+  padding: 5px;
+}
+.fff{
+  @extend .abc;
+  border: 1px solid #000;
+}
+
+@mixin boxModel($w, $h, $bg, $cr) {
+  width: $w;
+  height: $h;
+  background: $bg;
+  color: $cr;
+  font-size: 20px;  //얘는 모든 include에 다 적용된다!
+}
+
+.ggg{
+  @include boxModel(100px, 100px, $mainBg, $red);
+}
+
+.box2{
+  @include boxModel(150px, 150px, $red, violet);
+}
+
+.mixin{
+  @include circle(100px, 100px, $mainBg, 50%);
+  &>.inner{
+    @include circle(50px, 50px, $red, 10px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+  }
+}
+.g1{
+  $k1: k1; //변수들은 최상위에다가!
+  $c1: c1;
+  // @include ampersand(green, $c1);
+  @include ampersand(blue, $k1);
+}
+.target{
+  @include tarInput(20px, 1.3em);
+  @include tarClassYaho(5px, 2em);
+}
+.slowbox{
+  $t1: t1;
+  @include aniFadeOut($t1, 5px, 1.3em, beige, $mainBg, all .5s ease-in);
+}
+
+.fastbox{
+  $f1: f1;
+  @include aniFadeOut($f1, 10px, 1.3em, powderblue, $mainBg, all .5s ease-in);
+}
+
+.middlebox{
+  $y1: y1;
+  @include aniFadeOut($y1, 20px, 1.3em, brown, $mainBg, all .5s ease-in);
+}

@@ -1,0 +1,35 @@
+@mixin circle($w, $h, $bg, $radi) {
+  width: $w;
+  height: $h;
+  background: $bg;
+  border-radius: $radi;
+}
+
+@mixin ampersand($cr, $v){
+  & .#{$v}{
+    color: $cr;
+  }
+}
+
+@mixin tarInput($pd, $fs){
+  & input[type="text"]{
+    padding: $pd;
+    font-size: $fs;
+  }
+}
+
+@mixin tarClassYaho($pd, $fs){
+  & div[class="yaho"]{
+    padding: $pd;
+    font-size: $fs;
+  }
+}
+@mixin aniFadeOut($c, $pd, $fs, $cr, $bg, $ts) {
+  &:hover .#{$c}{
+    padding: $pd;
+    font-size: $fs;
+    color: $cr;
+    background:$bg;
+    transition: $ts;
+  }
+}

@@ -1,0 +1,76 @@
+h1 {
+  color: red; }
+
+body {
+  color: #c10000; }
+
+.abc, .fff {
+  color: #c10000;
+  background: #ececec;
+  padding: 5px; }
+
+.fff {
+  border: 1px solid #000; }
+
+.ggg {
+  width: 100px;
+  height: 100px;
+  background: #ececec;
+  color: #c10000;
+  font-size: 20px; }
+
+.box2 {
+  width: 150px;
+  height: 150px;
+  background: #c10000;
+  color: violet;
+  font-size: 20px; }
+
+.mixin {
+  width: 100px;
+  height: 100px;
+  background: #ececec;
+  border-radius: 50%; }
+  .mixin > .inner {
+    width: 50px;
+    height: 50px;
+    background: #c10000;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%); }
+
+.g1 .k1 {
+  color: blue; }
+
+.target input[type="text"] {
+  padding: 20px;
+  font-size: 1.3em; }
+
+.target div[class="yaho"] {
+  padding: 5px;
+  font-size: 2em; }
+
+.slowbox:hover .t1 {
+  padding: 5px;
+  font-size: 1.3em;
+  color: beige;
+  background: #ececec;
+  transition: all 0.5s ease-in; }
+
+.fastbox:hover .f1 {
+  padding: 10px;
+  font-size: 1.3em;
+  color: powderblue;
+  background: #ececec;
+  transition: all 0.5s ease-in; }
+
+.middlebox:hover .y1 {
+  padding: 20px;
+  font-size: 1.3em;
+  color: brown;
+  background: #ececec;
+  transition: all 0.5s ease-in; }
