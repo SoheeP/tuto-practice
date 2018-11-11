@@ -15,12 +15,6 @@ div[class^="part"] {
   font-size: 1.3em;
   font-weight: bold; }
 
-input[id*="slide"] {
-  display: none; }
-
-input:checked + div {
-  display: block; }
-
 div.content {
   position: absolute;
   top: 0;
@@ -51,10 +45,16 @@ div.content {
   .label_wrap label[for^="slide"] {
     display: inline-block;
     width: 50px;
-    height: 4px;
+    height: 8px;
     margin: 0 10px;
     background-color: cadetblue;
     cursor: pointer; }
+
+input[id*="slide"] {
+  display: none; }
+
+input:checked + div.content {
+  display: block; }
 
 .part2 q {
   display: block;
@@ -69,3 +69,44 @@ div.content {
 
 .part2 blockquote::first-line {
   background-color: darkkhaki; }
+
+.part3 {
+  position: relative; }
+  .part3 .slide {
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%); }
+    .part3 .slide:not(:first-of-type) {
+      display: none; }
+  .part3 .slide_text {
+    font-size: 2em;
+    font-weight: bold;
+    color: #3781ac;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%); }
+  .part3 .label_arrow {
+    width: 100%; }
+    .part3 .label_arrow label {
+      font-size: 2em;
+      font-weight: bold;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+      cursor: pointer; }
+    .part3 .label_arrow_prev {
+      left: 0; }
+    .part3 .label_arrow_next {
+      right: 0; }
+  .part3 input:active + .slide {
+    display: block; }

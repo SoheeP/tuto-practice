@@ -19,14 +19,6 @@ div[class^="part"] {
   }
 }
 
-input[id*="slide"] {
-  display: none;
-}
-
-input:checked + div{
-  display: block;
-}
-
 div.content {
   position: absolute;
   top: 0;
@@ -68,12 +60,22 @@ div.content {
   label[for^="slide"] {
     display: inline-block;
     width: 50px;
-    height: 4px;
+    height: 8px;
     margin: 0 10px;
     background-color: cadetblue;
     cursor: pointer;
   }
 }
+
+input[id*="slide"] {
+  display: none;
+}
+
+input:checked + div.content{
+  display: block;
+}
+
+
 .part2{
   q{
     display: block;
@@ -90,5 +92,54 @@ div.content {
   }
   blockquote::first-line{
     background-color: darkkhaki;
+  }
+}
+
+@mixin center($pos, $top, $left){
+  position: $pos;
+  top: $top;
+  left: $left;
+  transform: translate(-$top, -$left);
+  -ms-transform: translate(-$top, -$left);
+  -webkit-transform: translate(-$top, -$left);
+}
+
+.part3{
+  position: relative;
+  .slide{
+    width: 100%;
+    height: 300px;
+    @include center(absolute, 50%, 50%);
+    &:not(:first-of-type){
+      display: none;
+    }
+  }
+  .slide_text{
+    font-size: 2em;
+    font-weight: bold;
+    color: rgb(55, 129, 172);
+    @include center(absolute, 50%, 50%);
+  }
+  .label_arrow{
+    width: 100%;
+    label{
+    font-size: 2em;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    cursor: pointer;
+  }
+    &_prev{
+      left: 0;
+    }
+    &_next{
+      right: 0; 
+    }
+  }
+  input:active + .slide{
+    display: block;
   }
 }
