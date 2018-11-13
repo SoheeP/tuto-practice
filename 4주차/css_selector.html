@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
   <title>CSS셀렉터 사용해보기!</title>
   <link rel="stylesheet" href="./css_selector.css">
 </head>
+
 <body>
   <div class="part1">
     <p class="title">CSS슬라이드 제작</p>
@@ -20,12 +22,12 @@
       <input type="radio" name="button" id="slide4">
       <div class="content" data-slide="fourth"></div>
     </div>
-      <div class="label_wrap">
-        <label for="slide1"></label>
-        <label for="slide2"></label>
-        <label for="slide3"></label>
-        <label for="slide4"></label>
-      </div> 
+    <div class="label_wrap">
+      <label for="slide1"></label>
+      <label for="slide2"></label>
+      <label for="slide3"></label>
+      <label for="slide4"></label>
+    </div>
   </div>
   <div class="part2">
     <p class="title">First-line, First-letter 사용</p>
@@ -38,25 +40,35 @@
   <div class="part3">
     <p class="title">CSS슬라이드 2</p>
     <div class="wrap">
-      <input type="radio" name="arrow" id="prev">
       <div class="slide">
-        <p class="slide_text">슬라이드1</p>
+        <div class="label_wrap">
+          <label for="s-01">01</label>
+          <label for="s-02">02</label>
+          <label for="s-03">03</label>
+          <label for="s-04">04</label>
+        </div>
+        <div class="contents_wrap">
+          <input type="radio" name="select" id="s-01">
+          <div class="content">
+            <p>First Slide</p>
+          </div>
+          <input type="radio" name="select" id="s-02">
+          <div class="content">
+              <p>Second Slide</p>
+            </div>
+          <input type="radio" name="select" id="s-03">
+          <div class="content">
+              <p>Third Slide</p>
+            </div>
+          <input type="radio" name="select" id="s-04">
+          <div class="content">
+              <p>Fourth Slide</p>
+            </div>
+        </div>
       </div>
-      <div class="slide">
-        <p class="slide_text">슬라이드2</p>
-      </div>
-      <div class="slide">
-        <p class="slide_text">슬라이드3</p>
-      </div>
-      <div class="slide">
-        <p class="slide_text">슬라이드4</p>
-      </div>
-      <input type="radio" name="arrow" id="next">
-      <div class="label_arrow">
-        <label for="prev" class="label_arrow_prev">&lt;</label>
-        <label for="next" class="label_arrow_next">&gt;</label>
-      </div>
+      
     </div>
   </div>
 </body>
+
 </html>

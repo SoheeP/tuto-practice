@@ -15,7 +15,7 @@ div[class^="part"] {
   font-size: 1.3em;
   font-weight: bold; }
 
-div.content {
+.part1 div.content {
   position: absolute;
   top: 0;
   left: 0;
@@ -25,24 +25,23 @@ div.content {
   background-size: 100%;
   background-repeat: no-repeat;
   transition: all .3s ease-in-out; }
-  div.content:first-of-type {
+  .part1 div.content:not(:first-of-type) {
+    opacity: 0; }
+  .part1 div.content:first-of-type {
     background-image: url("https://images.unsplash.com/photo-1541053476867-b02b2bd8ceeb?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9499013f4e313fbecc24289ea2b88465&auto=format&fit=crop&w=1050&q=80"); }
-  div.content:nth-of-type(2) {
-    background-image: url("https://images.unsplash.com/photo-1541111166270-2182253e5244?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=912eecd8eea767244764e6e81361d486&auto=format&fit=crop&w=1050&q=80");
-    display: none; }
-  div.content:nth-of-type(3) {
-    background-image: url("https://images.unsplash.com/photo-1541102387691-6c263a16c763?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4a6de9ebb8419913f2af116925ea1815&auto=format&fit=crop&w=889&q=80");
-    display: none; }
-  div.content:last-of-type {
-    background-image: url("https://images.unsplash.com/photo-1541058824243-30532c3d94fe?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b134e2254a3371999bc7a144c1ecdb57&auto=format&fit=crop&w=1040&q=80");
-    display: none; }
+  .part1 div.content:nth-of-type(2) {
+    background-image: url("https://images.unsplash.com/photo-1541111166270-2182253e5244?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=912eecd8eea767244764e6e81361d486&auto=format&fit=crop&w=1050&q=80"); }
+  .part1 div.content:nth-of-type(3) {
+    background-image: url("https://images.unsplash.com/photo-1541102387691-6c263a16c763?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4a6de9ebb8419913f2af116925ea1815&auto=format&fit=crop&w=889&q=80"); }
+  .part1 div.content:last-of-type {
+    background-image: url("https://images.unsplash.com/photo-1541058824243-30532c3d94fe?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b134e2254a3371999bc7a144c1ecdb57&auto=format&fit=crop&w=1040&q=80"); }
 
-.label_wrap {
+.part1 .label_wrap {
   position: relative;
   bottom: 0;
   width: 300px;
   margin: auto; }
-  .label_wrap label[for^="slide"] {
+  .part1 .label_wrap label[for^="slide"] {
     display: inline-block;
     width: 50px;
     height: 8px;
@@ -50,11 +49,11 @@ div.content {
     background-color: cadetblue;
     cursor: pointer; }
 
-input[id*="slide"] {
+.part1 input[id*="slide"] {
   display: none; }
 
-input:checked + div.content {
-  display: block; }
+.part1 input:checked + div.content {
+  opacity: 1; }
 
 .part2 q {
   display: block;
@@ -70,43 +69,25 @@ input:checked + div.content {
 .part2 blockquote::first-line {
   background-color: darkkhaki; }
 
-.part3 {
-  position: relative; }
-  .part3 .slide {
+.part3 .slide {
+  width: 100%; }
+
+.part3 .label_wrap {
+  display: inline-block;
+  width: 200px;
+  height: 500px; }
+  .part3 .label_wrap label {
+    display: block;
+    font-size: 1.3em;
+    color: orange; }
+
+.part3 .contents_wrap {
+  display: inline-block;
+  width: 500px;
+  height: 500px; }
+  .part3 .contents_wrap .content {
     width: 100%;
-    height: 300px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%); }
-    .part3 .slide:not(:first-of-type) {
-      display: none; }
-  .part3 .slide_text {
-    font-size: 2em;
-    font-weight: bold;
-    color: #3781ac;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%); }
-  .part3 .label_arrow {
-    width: 100%; }
-    .part3 .label_arrow label {
-      font-size: 2em;
-      font-weight: bold;
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      -webkit-transform: translateY(-50%);
-      cursor: pointer; }
-    .part3 .label_arrow_prev {
-      left: 0; }
-    .part3 .label_arrow_next {
-      right: 0; }
-  .part3 input:active + .slide {
-    display: block; }
+    height: 450px; }
+
+.part3 input:checked + .content {
+  transform: translate3d(100px, 100px, 0); }
