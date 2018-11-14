@@ -5,7 +5,7 @@
 
 div[class^="part"] {
   width: 100%;
-  height: 500px;
+  height: 450px;
 }
 
 .wrap {
@@ -114,34 +114,65 @@ div[class^="part"] {
   -webkit-transform: translate(-$top, -$left);
 }
 
+// @mixin prefix-trs ($seconds) {
+//   @each $prefix in -webkit-, -ms-, -moz-, -o- {
+//     #{$prefix}transition: all $seconds;
+//   }
+// }
 .part3 {
   .slide {
     width: 100%;
+    height: 250px;
+    overflow: hidden;
   }
 
   .label_wrap {
     display: inline-block;
     width: 200px;
-    height: 500px;
-
-    label {
-      display: block;
-      font-size: 1.3em;
-      color: orange;
-    }
+    vertical-align: top;
+  }
+  label {
+    display: block;
+    float: left;
+    font-size: 1.3em;
+    color: orange;
+    padding: 25px 0;
+    text-align: center;
   }
 
   .contents_wrap {
-    display: inline-block;
     width: 500px;
-    height: 500px;
+    &::after{
+      display: block;
+      clear: both;
+      content: '';
+    }
     .content{
       width: 100%;
-      height: 450px;
+      height: 50px;
+      transition: all .5s;
+      &-01{
+        background-color: #666;
+      }
+      &-02{
+        background-color: bisque;
+      }
+      &-03{
+        background-color: blueviolet;
+      }
+      &-04{
+        background-color: pink;
+      }
     }
   }
+  p{
+    line-height: 50px;
+  }
+  input{
+    // display: none;
+  }
+  
   input:checked + .content{
-    transform: translate3d(100px, 100px, 0);
-
+    transform: translateY(-30px);
   }
 }
