@@ -125,18 +125,13 @@ div[class^="part"] {
     height: 250px;
     overflow: hidden;
   }
-
-  .label_wrap {
-    display: inline-block;
-    width: 200px;
-    vertical-align: top;
-  }
   label {
+    width: 50px;
+    line-height: 50px;
     display: block;
     float: left;
     font-size: 1.3em;
     color: orange;
-    padding: 25px 0;
     text-align: center;
   }
 
@@ -169,10 +164,16 @@ div[class^="part"] {
     line-height: 50px;
   }
   input{
-    // display: none;
+    display: none;
   }
   
+
+
   input:checked + .content{
-    transform: translateY(-30px);
+    margin-top: -30px;
+    font-size: 1.8em;
+  }
+  input:not(:checked) + .content{
+    margin-top: 0;
   }
 }

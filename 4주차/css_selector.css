@@ -74,17 +74,13 @@ div[class^="part"] {
   height: 250px;
   overflow: hidden; }
 
-.part3 .label_wrap {
-  display: inline-block;
-  width: 200px;
-  vertical-align: top; }
-
 .part3 label {
+  width: 50px;
+  line-height: 50px;
   display: block;
   float: left;
   font-size: 1.3em;
   color: orange;
-  padding: 25px 0;
   text-align: center; }
 
 .part3 .contents_wrap {
@@ -109,5 +105,12 @@ div[class^="part"] {
 .part3 p {
   line-height: 50px; }
 
+.part3 input {
+  display: none; }
+
 .part3 input:checked + .content {
-  transform: translateY(-30px); }
+  margin-top: -30px;
+  font-size: 1.8em; }
+
+.part3 input:not(:checked) + .content {
+  margin-top: 0; }
