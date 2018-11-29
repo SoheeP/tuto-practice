@@ -1,0 +1,99 @@
+$t:100px;
+
+@mixin test($t) {
+  @if($t > 100px) {
+    color: rgb(243, 221, 221);
+    background-color: black;
+  }
+
+  @else {
+    color: orange;
+    background-color: pink;
+  }
+}
+
+.control:checked~.ttt {
+  $t: 200px;
+  color: red;
+}
+
+.target {
+  @include test($t);
+}
+
+@mixin color($t) {
+  width: 90px;
+  float: left;
+  border: 1px solid #ddd;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+
+  @if($t=="pc") {
+    padding: 5px 10px;
+    background: powderblue;
+  }
+
+  @else {
+    padding: 5px;
+    background: red;
+    color: #fff;
+  }
+}
+
+.menubar {
+  width: 400px;
+
+  div {
+    @include color("pc")
+  }
+
+  &::after {
+    display: block;
+    clear: both;
+    content: '';
+  }
+}
+
+@mixin rect ($wh) {
+  @if ($wh > 100px) {
+    width: $wh;
+    height: $wh;
+    background-color: #ddd;
+  }
+
+  @else {
+    width: ($wh - 50px);
+    height: ($wh - 50px);
+    border-radius: 50%;
+    background-color: #d31145;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+
+  }
+}
+
+.square {
+  @include rect(150px);
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+@each $class in box1,
+box2,
+box3,
+box4 {
+  .#{$class}{
+    color: #000;
+    border: 1px solid #000;
+  }
+}
+
+@media screen and(max-width:800px) {
+  .menubar div {
+    @include color("mobile")
+  }
+
+  .square {
+    @include rect(100px);
+  }
+}
