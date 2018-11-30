@@ -77,3 +77,8 @@ typings/
 
 #DynamoDB Local files 
 .dynamodb/ 
+
+
+#개인적으로 제외하는 것
+kizi/
+sam2/
