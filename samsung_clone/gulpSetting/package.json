@@ -15,5 +15,8 @@
     "gulp-images": "0.0.3",
     "gulp-sass": "^4.0.2",
     "gulp-uglify": "^3.0.1"
+  },
+  "dependencies": {
+    "gulp-sourcemaps": "^2.6.4"
   }
 }
