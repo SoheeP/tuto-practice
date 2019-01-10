@@ -1,0 +1,74 @@
+$main_color: #ffd200;
+@mixin clear {
+  &:after {
+    display: block;
+    clear: both;
+    content: '';
+  }
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+body{
+  font-family: 'Noto Sans KR', sans-serif;
+}
+a {
+  text-decoration: none;
+}
+
+.wrap {
+  width: 1140px;
+  margin: auto;
+}
+
+header {
+  width: 100%;
+  position: relative;
+}
+
+.gnb {
+  .main_menu {
+    &_list {
+      float: left;
+
+      a {
+        display: block;
+        color: #000;
+        font-weight: 400;
+        font-size: 1em;
+        padding: 20px 40px;
+      }
+      &.white{
+        a{
+        padding: 20px;}
+      }
+    }
+   
+    .white {
+      background-color: #fff;
+    }
+
+    .yellow {
+      background-color: $main_color;
+    }
+    .font_yellow{
+      color: $main_color;
+    }
+  }
+
+  @include clear;
+}
+
+.slider {
+  width: 100%;
+  position: relative;
+
+  img {
+    display: block;
+    width: 100%;
+  }
+}
