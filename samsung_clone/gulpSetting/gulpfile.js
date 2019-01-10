@@ -45,7 +45,7 @@ var scssOptions = {
 gulp.task('gulp-sass', function(){
   return gulp.src(paths.scss) //scss파일 읽기
   .pipe(sourcemaps.init()) // sourcemap 초기화(생성)
-  .pipe(sass()) //scss 옵션값 설정
+  .pipe(sass().on('error', sass.logError)) //scss 옵션값 설정
   .pipe(sourcemaps.write()) // 위에서 생성한 소스맵 사용
   .pipe(gulp.dest(dist + '/Style/Css')); //목적지(destination) 설정
 });
