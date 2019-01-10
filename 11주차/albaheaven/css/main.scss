@@ -27,7 +27,11 @@ a {
 
 header {
   width: 100%;
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 10;
 }
 
 .gnb {
@@ -70,5 +74,37 @@ header {
   img {
     display: block;
     width: 100%;
+  }
+}
+.report{
+  position: relative;
+  background-color:#eee;
+}
+.quarter{
+  padding:100px 70px;
+  @include clear;
+  &_section{
+    float:left;
+    a{
+      display: block;
+      width: 500px;
+      height: 361px;
+      background: {
+        image: url('./../img/w_mainGrid_v2.jpg');
+        repeat: no-repeat;
+      }
+    }
+    .best_chief{
+      background-position: top left;
+    }
+    .what_payment{
+      background-position: top right;
+    }
+    .chear{
+      background-position: bottom left;
+    }
+    .night_bus{
+      background-position: bottom right;
+    }
   }
 }

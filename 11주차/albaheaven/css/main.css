@@ -15,7 +15,11 @@ a {
 
 header {
   width: 100%;
-  position: relative; }
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 10; }
 
 .gnb .main_menu_list {
   float: left; }
@@ -48,3 +52,30 @@ header {
   .slider img {
     display: block;
     width: 100%; }
+
+.report {
+  position: relative;
+  background-color: #eee; }
+
+.quarter {
+  padding: 100px 70px; }
+  .quarter:after {
+    display: block;
+    clear: both;
+    content: ''; }
+  .quarter_section {
+    float: left; }
+    .quarter_section a {
+      display: block;
+      width: 500px;
+      height: 361px;
+      background-image: url("./../img/w_mainGrid_v2.jpg");
+      background-repeat: no-repeat; }
+    .quarter_section .best_chief {
+      background-position: top left; }
+    .quarter_section .what_payment {
+      background-position: top right; }
+    .quarter_section .chear {
+      background-position: bottom left; }
+    .quarter_section .night_bus {
+      background-position: bottom right; }
