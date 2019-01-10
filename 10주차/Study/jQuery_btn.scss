@@ -1,0 +1,45 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  position: relative;
+}
+.slide_clip{
+  position: relative;
+  width: 300px;
+  height: 250px;
+  overflow: hidden;
+}
+.slide_wrap{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 400%;
+  height: 100%;
+  margin-left: 0;
+  &::after{
+    display: block;
+    content: '';
+    clear: both;
+  }
+}
+.slide{
+  float: left;
+  width: (100% / 4);
+  height: 100%;
+}
+
+.img1{
+  background-color: #ff0000;
+}
+.img2{
+  background-color: #00ff00;
+}
+.img3{
+  background-color: #0000ff;
+}
+.img4{
+  background-color: #ffff00;
+}

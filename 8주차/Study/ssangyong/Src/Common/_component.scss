@@ -1,0 +1,30 @@
+@mixin title($lang) {
+  font-size: 2em;
+  @if $lang == en{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+  } @else {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 500;
+  }
+}
+
+@mixin nav_column ($innerC, $colums){
+  @if $colums == 3{
+    & > li.#{$innerC}{
+      float: left;
+    }
+  } @else {
+    & > li.#{$innerC}{
+      width: calc(50% - #{$margin});
+      float: left;
+    }
+  }
+}
+
+%clear{
+  display: block;
+  clear: both;
+  content: '';
+}
