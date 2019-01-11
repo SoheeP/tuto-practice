@@ -4,7 +4,7 @@ $('.container').slick({
   autoplay: true,
   autoplaySpeed: 2000,
   dots: true,
+  dotsClass: 'dots_wrap',
   nextArrow: $('.next'),
   prevArrow: $('.prev'),
-  respondTo: 'min'
 });

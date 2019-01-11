@@ -10,7 +10,7 @@ a {
   text-decoration: none; }
 
 .wrap {
-  width: 1140px;
+  width: 1080px;
   margin: auto; }
 
 header {
@@ -20,6 +20,9 @@ header {
   left: 0;
   overflow: hidden;
   z-index: 10; }
+
+.logo {
+  padding: 15px; }
 
 .gnb .main_menu_list {
   float: left; }
@@ -37,6 +40,10 @@ header {
 
 .gnb .main_menu .yellow {
   background-color: #ffd200; }
+  .gnb .main_menu .yellow:first-of-type {
+    padding-left: 35px; }
+  .gnb .main_menu .yellow:last-of-type {
+    padding-right: 35px; }
 
 .gnb .main_menu .font_yellow {
   color: #ffd200; }
@@ -49,9 +56,94 @@ header {
 .slider {
   width: 100%;
   position: relative; }
+  .slider .container .common_banner {
+    width: 100%;
+    height: 1024px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; }
+  .slider .container .banner1 {
+    background-image: url("./../img/w_visual2_bg1.jpg"); }
+  .slider .container .banner2 {
+    background-image: url("./../img/w_visual2_bg2.jpg"); }
+  .slider .container .banner3 {
+    background-image: url("./../img/w_visual2_bg3.jpg"); }
+  .slider .container .banner4 {
+    background-image: url("./../img/w_visual2_bg4.jpg"); }
   .slider img {
     display: block;
     width: 100%; }
+  .slider .dots_wrap {
+    position: absolute;
+    bottom: 200px;
+    left: 50%;
+    transform: translateX(-50%); }
+    .slider .dots_wrap li {
+      display: inline-block;
+      margin: 0 5px; }
+    .slider .dots_wrap button[role=tab] {
+      width: 12px;
+      height: 12px;
+      border: none;
+      border-radius: 50%;
+      background-color: #fff;
+      font-size: 0;
+      transition: all .1s;
+      outline: none; }
+    .slider .dots_wrap .slick-active button[role=tab] {
+      width: 50px;
+      border-radius: 6px;
+      background-color: #ffd200; }
+  .slider .btn_wrap {
+    position: absolute;
+    width: 100%;
+    top: 40%; }
+    .slider .btn_wrap .icon {
+      position: absolute;
+      font-size: 5em;
+      color: #fff; }
+    .slider .btn_wrap i.prev {
+      left: 50px; }
+    .slider .btn_wrap i.next {
+      right: 50px; }
+  .slider .scroll_down {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%); }
+    .slider .scroll_down_radius {
+      position: relative;
+      width: 70px;
+      height: 95px;
+      border: 1px solid #fff;
+      border-radius: 35px;
+      text-align: center; }
+      .slider .scroll_down_radius::before {
+        display: block;
+        position: absolute;
+        top: -10px;
+        left: 50%;
+        width: 1px;
+        height: 20px;
+        border-left: 1px solid #fff;
+        content: ''; }
+      .slider .scroll_down_radius .text {
+        position: relative;
+        top: 40%;
+        transform: translateY(-40%);
+        width: 100%;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 0.8em;
+        line-height: 1; }
+      .slider .scroll_down_radius .icon {
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+        color: #fff;
+        font-size: 2.3em; }
 
 .report {
   width: 100%; }
@@ -61,14 +153,15 @@ header {
     height: 406px;
     background-image: url("./../img/w_campaign_reportBtn.jpg");
     background-repeat: no-repeat;
-    background-position: center top; }
+    background-position: center top;
+    background-color: #f1c80c; }
 
 .menu_grid {
   position: relative;
   background-color: #eee; }
 
 .quarter {
-  padding: 100px 70px; }
+  padding: 100px 20px; }
   .quarter:after {
     display: block;
     clear: both;
@@ -91,26 +184,29 @@ header {
       background-position: bottom right; }
 
 .movie {
-  text-align: center; }
+  text-align: center;
+  background-color: #fbfbfb; }
   .movie_content {
-    padding: 100px 0; }
-  .movie .title_prologue, .movie .title_attack {
+    padding: 80px 0; }
+  .movie .title_prologue,
+  .movie .title_attack {
     display: none; }
   .movie_title {
-    font-size: 3.5em;
+    font-size: 3.2em;
     font-weight: 400; }
   .movie_p {
-    font-size: 2em;
+    font-size: 1.8em;
     font-weight: 300; }
   .movie .select_tab {
     display: inline-block;
-    margin: 50px 0; }
+    margin: 30px 0 50px; }
     .movie .select_tab a {
       float: left;
       display: block;
       font-size: 2em;
       font-weight: 700;
-      padding: 20px 40px;
+      width: 270px;
+      padding: 20px 0;
       border: 1px solid #000;
       letter-spacing: 2px;
       color: #ddd; }
@@ -128,16 +224,18 @@ header {
 footer {
   position: relative;
   background-color: #333;
-  text-align: center; }
+  text-align: center;
+  font-size: 0.9em;
+  font-weight: 300; }
   footer .footer_content {
-    padding: 40px 0; }
+    padding: 40px 0 60px; }
   footer .sns {
-    padding: 20px 0; }
+    padding: 15px 0; }
     footer .sns_icon {
       display: inline-block;
       width: 70px;
       height: 70px;
-      margin: 0 10px;
+      margin: 0 13px;
       background-image: url("./../img/w_social_icon.png");
       background-repeat: no-repeat; }
   footer .go_kakao {
@@ -147,9 +245,11 @@ footer {
   footer .go_twitter {
     background-position: top right; }
   footer .footer_menu {
-    text-align: center; }
+    text-align: center;
+    letter-spacing: -1px; }
     footer .footer_menu li {
-      display: inline-block; }
+      display: inline-block;
+      vertical-align: middle; }
       footer .footer_menu li:after {
         display: inline-block;
         width: 1px;
@@ -161,14 +261,24 @@ footer {
       footer .footer_menu li:last-child:after {
         border: none; }
       footer .footer_menu li a {
-        color: #a1a1a1; }
-  footer .contact_info p {
-    display: inline-block; }
-  footer .contact_info .call:after {
-    display: inline-block;
-    width: 1px;
-    height: 10px;
-    border-left: 1px solid #555;
-    margin: 0 5px;
-    vertical-align: middle;
-    content: ''; }
+        color: #efefef;
+        display: inline-block;
+        padding: 0 5px;
+        vertical-align: middle; }
+  footer .contact_info {
+    padding: 5px 10px 15px;
+    font-size: 0.9em; }
+    footer .contact_info p {
+      display: inline-block;
+      color: #efefef; }
+    footer .contact_info .call:after {
+      display: inline-block;
+      width: 1px;
+      height: 10px;
+      border-left: 1px solid #555;
+      margin: 0 5px;
+      vertical-align: middle;
+      content: ''; }
+  footer .copyright {
+    font-size: 0.9em;
+    color: #757575; }
