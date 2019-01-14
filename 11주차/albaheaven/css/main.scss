@@ -416,3 +416,9 @@ footer {
     color: rgb(117, 117, 117);
   }
 }
+
+@media screen and (max-width:1200px){
+  .wrap{
+    width: 100%;
+  }
+}
