@@ -17,6 +17,7 @@ study폴더에는 과외시간에 작성한 파일이 있고, 그 외 파일들�
 | 5주차   | SCSS 사용하여 CSS 컴파일해본 것(수업) |
 |6주차|for 반복문, jQuery 맛보기(수업)|
 |7주차|jQuery를 이용하여 focus, blur 이벤트 사용해보기|
-
-
-
+|8주차| 쌍용페이지 Clone작업해보기(진행중)                           |
+|10주차|jQuery를 이용하여 Slide 만들어보기|
+|11주차|- JavaScript 맛보기(수업)<br>- 알바천국 Clone작업해보기(반응형 작업 진행중)|
+|12주차|- JavaScript (수업)<br> ㄴalert, prompt, confirm, 데이터타입, function작성 등<br>- 수업 내용 복습|
