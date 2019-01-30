@@ -3,7 +3,7 @@
 ### Repeat
 + List
 
-  + ##### 1주차
+  + #### 1주차
 
     1. alert('')
     
@@ -24,7 +24,7 @@
     15. indexOf, lastIndexOf
     16. slice, substring, substr
 
-  + ###### 2주차
+  + ##### 2주차
 
     17. for문으로 0~10 출력, 10~0 출력, 2의 배수, 2의 약수 구해보기
     18. 구구단, 2-3단 for문, 함수 출력해보기
@@ -34,7 +34,7 @@
     22. Math 함수 사용해보기(abs, ceil, floor, random, sqrt, pow, round, PI, max, min)
     23. number method(NaN, isNaN, parseInt, parseFloat, toFixed, toString 등등)
 
-  + ##### 3주차
+  + #### 3주차
 
     24. Array method(forEach, join, split, splice, slice, concat, reverse)
     25. Array(map, filter, every, some, reduce, reduceRight, indexOf)
