@@ -66,3 +66,24 @@ var putMenu = document.getElementById("coffeeMenu")
 coffee.list.forEach((x, y) => {
   putMenu.innerHTML += `${y+1}. ${x} <br>`
 })
+
+coffee.list.push('')
+
+/*
+let todayLunch = {
+  한솥: ['새치고기고기', 4500],
+  편의점: ['라면, 간식 etc', 4000],
+  파파이스: ['치킨휠레버거', 5900],
+  분식집: ['라면+김밥..?', 5000],
+  따라가서먹는다: ['한신가겠지', 6000]
+}
+function lunchRandom(){
+  var decideR = Math.floor(Math.random() * todayLunch.length)
+}
+//랜덤으로 한솥, 편의점, 파파이스를 선택하고 그 안의 배열을 보여준다.
+// 현재 법카 잔액에서 나머지 금액을 뺀 나머지도 보여준다.
+
+*/
+
+var lunch = ['새치고기고기', '라면, 간식 etc', '치킨휠레버거', '한신가겠지']
+console.log(lunch[Math.floor(Math.random() * lunch.length)])
