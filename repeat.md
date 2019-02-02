@@ -6,7 +6,6 @@
   + #### 1주차
 
     1. alert('')
-    
     2. console.log(''), console.group(''), console.groupend(), console.clear();
     3. documnet.getElementById, className, tagName
     4. documnet.getElementById.innerHtml=''; ,textContent
@@ -41,3 +40,8 @@
     26. forEach를 이용해서 고객리스트 만들기, map
     27. 숫자야구 게임 만들어보기
     28. 로또 추출기 만들어보기
+
+    29. find
+    30. try catch finally
+    31. error
+    32. scope...
