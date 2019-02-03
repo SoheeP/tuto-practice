@@ -1,9 +1,10 @@
 # 복습할것
 
-### Repeat
+## Repeat
+
 + List
 
-  + #### 1주차
+  + ### 1주차
 
     1. alert('')
     2. console.log(''), console.group(''), console.groupend(), console.clear();
@@ -23,7 +24,7 @@
     15. indexOf, lastIndexOf
     16. slice, substring, substr
 
-  + ##### 2주차
+  + ### 2주차
 
     17. for문으로 0~10 출력, 10~0 출력, 2의 배수, 2의 약수 구해보기
     18. 구구단, 2-3단 for문, 함수 출력해보기
@@ -33,13 +34,15 @@
     22. Math 함수 사용해보기(abs, ceil, floor, random, sqrt, pow, round, PI, max, min)
     23. number method(NaN, isNaN, parseInt, parseFloat, toFixed, toString 등등)
 
-  + #### 3주차
+  + ### 3주차
 
     24. Array method(forEach, join, split, splice, slice, concat, reverse)
     25. Array(map, filter, every, some, reduce, reduceRight, indexOf)
     26. forEach를 이용해서 고객리스트 만들기, map
     27. 숫자야구 게임 만들어보기
     28. 로또 추출기 만들어보기
+  
+  + ### 4주차
 
     29. find
     30. try catch finally
