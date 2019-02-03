@@ -47,4 +47,5 @@
     29. find
     30. try catch finally
     31. error
-    32. scope...
+    32. scope 개념, hoisting 개념
+    33. use strict, this사용법
