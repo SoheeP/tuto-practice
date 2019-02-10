@@ -166,3 +166,40 @@ function gogoMarket(){
 document.querySelector("#market").addEventListener("click", function(){
   gogoMarket();
 })
+
+//20190207
+/*
+var escGame = {
+  list1: ['지하철에서', '집에서', '회사에서', '일본에서', '지옥에서'],
+  list2: ['떡볶이를', '짜장면을', '상사를', '월급을'],
+  list3: ['먹는다', '포장해 간다', '탕진한다', '때린다', '도망간다', '잃는다']
+}
+
+var pList1 = document.querySelector('.list1');
+var plist2 = document.querySelector('.list2');
+var plist3 = document.querySelector('.list3');
+
+function listOutput(){
+  if(window.event.keyCode === 27){}
+}
+
+pList1.innerHTML = escGame.list1
+*/
+
+var agree = confirm('로또 시작하시겠습니까?')
+
+if(agree){
+  var isAuto = confirm('자동으로 뽑으시겠습니까?')
+  if(isAuto){
+    let autoNumArr = [];
+    let autoLoop = 0;
+    for(; agree ; ){
+      var count = prompt('몇장을 구매하시겠습니까?').trim();
+      if(isNaN(count)){
+        alert('숫자를 입력해주세요!');
+        continue;
+      }
+      for( ; autoLoop < count ; autoLoop ++){}
+    }
+  }
+}
