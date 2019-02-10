@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>인원추가</title>
+  <style>
+    .test{
+      background-color: orange;
+    }
+    .delBt{
+      cursor: pointer;
+    }
+    .dataList{
+      padding-top: 15px;
+      text-align: center;
+    }
+    .infoDiv{
+      margin: 5px 0;
+    }
+    .infoName, .infoAddress, .infoEmail{
+      display:inline-block;
+      width: calc(100% / 3 - 10px);
+      margin:auto 5px;
+      background-color: #eee;
+      border-radius: 2px;
+      color: #333;
+    }
+    .name, .address, .email{
+      float: left;
+      width: calc(100% / 3);
+      border: 1px solid #aaa;
+      box-sizing: border-box;
+    }
+    .address{
+      border-left-width: 0px;
+      border-right-width: 0px
+    }
+    .titleBox::after{
+      display: block;
+      clear: both;
+      content: '';
+    }
+  </style>
+</head>
+
+<body>
+  <form action="" id="inputForm">
+    <input id="addName" type="text" name="fullName" placeholder="이름">
+    <input id="addAddress" type="text" name="address" placeholder="주소">
+    <input id="addEmail" type="email" name="email" placeholder="이메일">
+    <input class="addBtn" type="submit" value="추가">
+  </form>
+  <div class="dataList">
+    <div class="titleBox">
+      <div class="name">이름</div>
+      <div class="address">주소</div>
+      <div class="email">이메일</div>
+    </div>
+    <div class="listBox"></div>
+  </div>
+  <script src="./1.js"></script>
+</body>
+
+</html>
