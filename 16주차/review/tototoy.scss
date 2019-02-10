@@ -1,0 +1,101 @@
+@mixin clear {
+  &:after {
+    display: block;
+    clear: both;
+    content: '';
+  }
+}
+
+
+.wrap {
+  width: 80%;
+  margin: auto;
+}
+
+.header {
+  width: 100%;
+  padding-top: 15px;
+
+  &__title {
+    float: left;
+
+    &--gray {
+      @extend .header__title;
+      color: gray;
+    }
+  }
+
+  &__info {
+    float: right;
+  }
+
+  @include clear();
+}
+
+.report-title {
+  @include clear();
+
+&__item {
+  float: left;
+  width: (100% / 4);
+  box-sizing: border-box;
+  text-align: center;
+  padding: 5px;
+
+  &-border {
+    $border-color:#d7dae2;
+    @extend .report-title__item;
+    background-color: #edf2f6;
+    border: {
+      top: 1px solid $border-color;
+      left: 1px solid $border-color;
+      bottom: 1px solid $border-color;
+    }
+    font-weight: bold;
+    color: #6e7d9a;
+
+    &:last-child {
+      border-right: 1px solid $border-color;
+    }
+  }
+}
+}
+.report-form{
+  &__left-div{
+    float: left;
+    width: 50%;
+  }
+  &__right-div{
+    float: right;
+    width: 50%;
+  }
+}
+.report-form__item{
+  @include clear();
+}
+.report-form__label {
+  display: block;
+  width: 100%;
+  &--gray {
+    @extend .report-form__label;
+    color: gray;
+  }
+}
+.report-form__input{
+  border: 1px solid #bbb;
+  border-radius: 2px;
+  box-sizing: border-box;
+  padding: 7px;
+}
+
+.report-data{
+  &__list{
+    @include clear();
+  }
+  &__name, &__address, &__email, &__etc{
+    float:left;
+    width:calc(100% / 4);
+    text-align: center;
+  }
+  
+}
