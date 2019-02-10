@@ -49,3 +49,8 @@
     31. error
     32. scope 개념, hoisting 개념
     33. use strict, this사용법
+  
+  + ### 5주차
+
+    34. report 만들기 
+    35. Todo List 만들기
