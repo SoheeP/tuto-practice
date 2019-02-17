@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sign up</title>
+  <link rel="stylesheet" href="./sign_up.css">
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="">
+
+      <form action="" id="signupForm" class="signup__form">
+        <h2 class="signup__title">SIGN UP</h2>
+        <label class="signup__labal" for="username">
+          이름 :
+        </label>
+        <div>
+          <input type="text" class="signup__input" name="username" id="username" autocomplete="off" autofocus>
+        </div>
+        <label class="signup__labal" for="Address">
+          Address :
+        </label>
+        <div>
+          <input type="text" class="signup__input" name="Address" id="Address" autocomplete="off" autofocus>
+        </div>
+        <label for="password" class="signup__labal">
+          Password :
+        </label>
+        <div>
+          <input type="password" class="signup__input" name="password" id="password">
+        </div>
+        <label  class="signup__labal">
+          성별 :
+        </label>
+        <div class="signup__left_box">
+          <input type="radio" class="gender__radio" id="genderMan" name="gender">
+          <label for="genderMan">남</label>
+          <input type="radio" class="gender__radio" id="genderWomman" name="gender">
+          <label for="genderWomman" >여</label>
+        </div>
+        <label  class="signup__labal">
+            생년월일 :
+        </label>
+        <div class="signup__left_box">
+          <select name="signupBirthYears" id="signupBirthYears"></select>
+          <label for="">년</label>
+          <select name="signupBirthMonth" id="signupBirthMonth"></select>
+          <label for="">월</label>
+          <select name="signupBirthDate" id="signupBirthDate"></select>
+          <label for="">일</label>
+        </div>
+        <label for="password" class="signup__labal">
+            관심분야 :
+        </label>
+        <div class="favor_con">
+          <div class="faver_box">
+            <input type="checkbox"  class="favor__checkbox" id="favorCoding" name="favorCoding" value="코딩"><label for="favorCoding">코딩</label>
+          </div>
+          <div class="faver_box">
+            <input type="checkbox" class="favor__checkbox" id="favorExer" name="favorExer" value="운동"><label for="favorExer">운동</label>
+          </div>
+          <div class="faver_box">
+            <input type="checkbox" class="favor__checkbox" id="favorMovie" name="favorMovie" value="영화감상"><label for="favorMovie">영화감상</label>
+          </div>
+          <div class="faver_box">
+            <input type="checkbox" class="favor__checkbox" id="favorShop" name="favorShop" value="쇼핑"><label for="favorShop">쇼핑</label>
+          </div>
+          <div class="faver_box">
+            <input type="checkbox" class="favor__checkbox" id="favorTraval" name="favorTraval" value="여행"><label for="favorTraval">여행</label>
+          </div>
+        </div>
+        <div>
+          <button type="submit" class="signup__bt">OK</button>
+        </div>
+        
+      </form>
+    </div>
+  </div>
+  <script src="./db.js"></script>
+  <script src="./sign_up.js"></script>
+</body>
+
+</html>
