@@ -16,58 +16,71 @@
     clear: both;
     content: ''; }
 
-.report-title:after {
+.report__item {
+  padding: 10px 0; }
+
+.report__label, .report__label--gray {
+  display: inline-block;
+  width: 35%; }
+  .report__label--gray {
+    color: gray; }
+
+.report__input {
+  border: 1px solid #bbb;
+  border-radius: 2px;
+  box-sizing: border-box;
+  padding: 7px; }
+
+.report__btnArea {
+  width: 100%;
+  background-color: #efefef;
+  padding: 10px 0; }
+  .report__btnArea .report__creatBtn {
+    float: right;
+    background-color: #6e7d9a;
+    color: #fff;
+    border: #6e7d9a 1px solid;
+    padding: 5px 10px;
+    border-radius: 3px;
+    box-sizing: border-box; }
+  .report__btnArea:after {
+    display: block;
+    clear: both;
+    content: ''; }
+
+.report__title:after {
   display: block;
   clear: both;
   content: ''; }
 
-.report-title__item, .report-title__item-border {
+.report__title__item, .report__title__item-border {
   float: left;
   width: 25%;
   box-sizing: border-box;
   text-align: center;
   padding: 5px; }
-  .report-title__item-border {
+  .report__title__item-border {
     background-color: #edf2f6;
     border-top: 1px solid #d7dae2;
     border-left: 1px solid #d7dae2;
     border-bottom: 1px solid #d7dae2;
     font-weight: bold;
     color: #6e7d9a; }
-    .report-title__item-border:last-child {
+    .report__title__item-border:last-child {
       border-right: 1px solid #d7dae2; }
 
-.report-form__left-div {
-  float: left;
-  width: 50%; }
-
-.report-form__right-div {
-  float: right;
-  width: 50%; }
-
-.report-form__item:after {
-  display: block;
-  clear: both;
-  content: ''; }
-
-.report-form__label, .report-form__label--gray {
-  display: block;
-  width: 100%; }
-  .report-form__label--gray {
-    color: gray; }
-
-.report-form__input {
+.report__dataArea {
   border: 1px solid #bbb;
-  border-radius: 2px;
-  box-sizing: border-box;
-  padding: 7px; }
-
-.report-data__list:after {
-  display: block;
-  clear: both;
-  content: ''; }
-
-.report-data__name, .report-data__address, .report-data__email, .report-data__etc {
-  float: left;
-  width: calc(100% / 4);
-  text-align: center; }
+  box-sizing: border-box; }
+  .report__dataArea .report__list {
+    border-bottom: 1px solid #bbb; }
+    .report__dataArea .report__list:after {
+      display: block;
+      clear: both;
+      content: ''; }
+    .report__dataArea .report__list:last-of-type {
+      border-bottom: none; }
+    .report__dataArea .report__list__name, .report__dataArea .report__list__address, .report__dataArea .report__list__email, .report__dataArea .report__list__etc {
+      float: left;
+      width: calc(100% / 4);
+      text-align: center; }
