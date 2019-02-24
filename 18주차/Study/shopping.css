@@ -1,0 +1,124 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+.container{
+  width: 450px;
+}
+
+.header__tab{
+  width: 100%;
+}
+.header__tab:after{
+  display: block;
+  clear: both;
+  content: '';
+}
+
+.header__title{
+  float: left;
+}
+.header__tab__box{
+  float: right;
+}
+.top__area{
+  /* border: 1px solid red; */
+  text-align: right;
+}
+.number__current{
+  font-weight: bold;
+}
+.number__status{
+  display:inline-block;
+}
+.btn__box{
+  display:inline-block;
+}
+
+.header__tab__product.on,
+.header__tab__mall.on,
+.header__tab__men.on{
+  border-bottom: 2px solid plum;
+}
+.shop__link__an{
+
+  text-decoration: none;
+  color: #333333;
+  font-size: 14px;
+}
+.shop__link{
+  display: block;
+}
+/* .shop__link:hover{
+  text-decoration: underline;
+} */
+.shop__link__an.bold{
+  font-weight: bold;
+  padding: 5px;
+}
+.shop__link__an:after{
+  display: inline-block;
+  content: '·';
+  font-weight: normal;
+}
+.shop__link__an:last-child:after{
+ display: none;
+}
+.shop__row{
+  display: block;
+  content: '';
+  clear: both;
+}
+.shop__product{
+  float: left;
+  width: calc(100% / 3);
+  padding: 5px;
+}
+.shop__img{
+  width: 100%;
+}
+.shop__text__top, .shop__text__bottom{
+  font-size: 12px;
+  text-align: center;
+  color: #333333;
+}
+.news__title{
+  float: left;
+}
+.news__title__box{
+
+}
+.news__title__box:after{
+  content: '';
+  display: block;
+  clear: both;
+}
+.news__refresh{
+  float: right;
+}
+.news__row{
+  /* border: 1px solid red; */
+}
+.news__row:after{
+  display: block;
+  content: '';
+  clear: both;
+}
+.news__text_box{
+  float: left;
+  /* border: 1px solid orange; */
+  font-size: 14px;
+
+}
+.news__text_box:first-child{
+  width: 100px;
+  color:#8974d7;
+}
+.news__text_box:last-child{
+  width: calc(100% - 100px);
+}
+.news__green{
+  color: green;
+}
