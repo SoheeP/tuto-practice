@@ -59,3 +59,7 @@
 
     36. 로그인, 회원가입
     37. local Storage
+
+  + ### 7주차
+
+    38. randombox제작
