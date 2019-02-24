@@ -20,51 +20,55 @@
         </div>
       </div>
       <div class="report">
-        <form action="" class="report-form">
-          <div class="report-form__item">
-            <div class="report-form__left-div">
-              <label class="report-form__label--gray" for="input_nameValue">Name: </label>
-              <label class="report-form__label--gray" for="input_addrValue">Address: </label>
-              <label class="report-form__label--gray" for="input_emailValue">Email: </label>
-              <label class="report-form__label--gray" for="input_etcValue">Etc: </label>
-            </div>
-            <div class="report-form__right-div">
-              <input type="text" id="input_nameValue" class="report-form__input" name="name" value="add name">
-              <input type="text" id="input_addrValue" class="report-form__input" name="address" value="add address">
-              <input type="text" id="input_emailValue" class="report-form__input" name="email" value="add email">
-              <input type="text" id="input_etcValue" class="report-form__input" name="etc" value="extra informaiton">
-            </div>
+        <form action="" class="report__form">
+          <div class="report__item">
+            <label class="report__label--gray" for="nameValue">Name: </label>
+            <input type="text" id="nameValue" class="report__input" name="name" value="add name">
           </div>
-          <div class="report-form__line">
-            <input type="submit" name="submitBtn" value="Add">
+          <div class="report__item">
+            <label class="report__label--gray" for="addrValue">Address: </label>
+            <input type="text" id="addrValue" class="report__input" name="address" value="add address">
+          </div>
+          <div class="report__item">
+            <label class="report__label--gray" for="emailValue">Email: </label>
+            <input type="text" id="emailValue" class="report__input" name="email" value="add email">
+          </div>
+          <div class="report__item">
+            <label class="report__label--gray" for="etcValue">Etc: </label>
+            <input type="text" id="etcValue" class="report__input" name="etc" value="extra informaiton">
+          </div>
+          <div class="report__btnArea">
+            <input type="submit" name="submitBtn" value="Create Report" class="report__creatBtn">
           </div>
         </form>
-        <div class="report-title">
-          <div class="report-title__item-border">Name</div>
-          <div class="report-title__item-border">Address</div>
-          <div class="report-title__item-border">Email</div>
-          <div class="report-title__item-border">ETC.</div>
+        <div class="report__dataArea">
+          <div class="report__title">
+            <div class="report__title__item-border">Name</div>
+            <div class="report__title__item-border">Address</div>
+            <div class="report__title__item-border">Email</div>
+            <div class="report__title__item-border">ETC.</div>
+          </div>
+          <ul class="report__ul">
+            <li class="report__list">
+              <div class="report__list__name">a</div>
+              <div class="report__list__address">b</div>
+              <div class="report__list__email">c</div>
+              <div class="report__list__etc">d</div>
+            </li>
+            <li class="report__list">
+              <div class="report__list__name">a</div>
+              <div class="report__list__address">b</div>
+              <div class="report__list__email">c</div>
+              <div class="report__list__etc">d</div>
+            </li>
+            <li class="report__list">
+              <div class="report__list__name">a</div>
+              <div class="report__list__address">b</div>
+              <div class="report__list__email">c</div>
+              <div class="report__list__etc">d</div>
+            </li>
+          </ul>
         </div>
-        <ul class="report-data">
-          <li class="report-data__list">
-            <div class="report-data__name">a</div>
-            <div class="report-data__address">b</div>
-            <div class="report-data__email">c</div>
-            <div class="report-data__etc">d</div>
-          </li>
-          <li class="report-data__list">
-            <div class="report-data__name">a</div>
-            <div class="report-data__address">b</div>
-            <div class="report-data__email">c</div>
-            <div class="report-data__etc">d</div>
-          </li>
-          <li class="report-data__list">
-            <div class="report-data__name">a</div>
-            <div class="report-data__address">b</div>
-            <div class="report-data__email">c</div>
-            <div class="report-data__etc">d</div>
-          </li>
-        </ul>
       </div>
     </div>
   </div>
