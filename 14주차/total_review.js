@@ -85,5 +85,10 @@ function lunchRandom(){
 
 */
 
-var lunch = ['새치고기고기', '라면, 간식 etc', '치킨휠레버거', '한신가겠지']
-console.log(lunch[Math.floor(Math.random() * lunch.length)])
+
+function disemvowel(str) {
+  let vowles2 = /[aeiou]/ig;
+  return str.replace(vowles2, "");
+}
+
+  console.log(disemvowel("This website ddd"))
