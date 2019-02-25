@@ -168,7 +168,7 @@ header {
     content: ''; }
   .quarter_section {
     float: left; }
-    .quarter_section a {
+    .quarter_section .quarter_a {
       display: block;
       width: 500px;
       height: 361px;
@@ -200,7 +200,7 @@ header {
   .movie .select_tab {
     display: inline-block;
     margin: 30px 0 50px; }
-    .movie .select_tab a {
+    .movie .select_tab .prologue, .movie .select_tab .attack {
       float: left;
       display: block;
       font-size: 2em;
@@ -210,7 +210,7 @@ header {
       border: 1px solid #000;
       letter-spacing: 2px;
       color: #ddd; }
-      .movie .select_tab a.on {
+      .movie .select_tab .prologue.on, .movie .select_tab .attack.on {
         color: #000; }
     .movie .select_tab .prologue {
       border-right: none; }
@@ -268,7 +268,7 @@ footer {
   footer .contact_info {
     padding: 5px 10px 15px;
     font-size: 0.9em; }
-    footer .contact_info p {
+    footer .contact_info .call, footer .contact_info .email {
       display: inline-block;
       color: #efefef; }
     footer .contact_info .call:after {
@@ -279,6 +279,16 @@ footer {
       margin: 0 5px;
       vertical-align: middle;
       content: ''; }
+    footer .contact_info .email {
+      font-style: normal; }
   footer .copyright {
     font-size: 0.9em;
     color: #757575; }
+
+@media screen and (max-width: 1200px) {
+  .wrap {
+    width: 100%; }
+  .movie_prologue, .movie_attack {
+    width: inherit; }
+  .quarter {
+    padding: 100px calc((100% - 1000px)/2); } }
