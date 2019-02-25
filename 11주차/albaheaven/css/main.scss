@@ -245,7 +245,7 @@ header {
   &_section {
     float: left;
 
-    a {
+    .quarter_a {
       display: block;
       width: 500px;
       height: 361px;
@@ -255,11 +255,9 @@ header {
         repeat: no-repeat;
       }
     }
-
-    .best_chief {
+    .best_chief{
       background-position: top left;
     }
-
     .what_payment {
       background-position: top right;
     }
@@ -301,7 +299,7 @@ header {
     display: inline-block;
     margin: 30px 0 50px;
 
-    a {
+    .prologue, .attack {
       float: left;
       display: block;
       font-size: 2em;
@@ -401,13 +399,16 @@ footer {
     padding: 5px 10px 15px;
     font-size: 0.9em;
 
-    p {
+    .call, .email{
       display: inline-block;
       color: #efefef;
     }
 
     .call {
       @include side_border(after)
+    }
+    .email{
+      font-style: normal;
     }
   }
 
@@ -420,5 +421,14 @@ footer {
 @media screen and (max-width:1200px){
   .wrap{
     width: 100%;
+  }
+  .movie {
+    &_prologue,
+    &_attack {
+      width: inherit;
+    }
+  }
+  .quarter {
+      padding: 100px calc((100% - 1000px)/2);
   }
 }
