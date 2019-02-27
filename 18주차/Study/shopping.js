@@ -18,47 +18,87 @@ function createShopLink() {
     aEl.href = shopdb.titleList[i].ahref;
     shopLink.append(aEl);
   }
+  shopLink.addEventListener("mouseover", function (e) {
+    console.log(e.target)
+    e.target.classList.toggle('underline');
+  })
 }
-createShopLink();
 
-//상품 이미지 삽입
 function createShopBox() {
   for (let i = 0; i < (shopdb.prodList.length); i++) {//로우
     let divElrow = document.createElement('div');
     divElrow.classList.add('shop__row');
     let rootEl = document.querySelector('.shop__box');
-    // let elProdRow = document.getElementsByClassName('.shop__row');
+    let ranCheck = [];
     for (let j = 0; j < 3; j++) {
-
       let ranNum = Math.floor(Math.random() * shopdb.prodList[i].list.length);
-      let divElProduct = document.createElement('div');
-      divElProduct.classList.add('shop__product');
+      if (ranCheck.includes(ranNum)) {
+        j = j - 1;
+        continue;
+      } else {
+        ranCheck.push(ranNum);
+        let divElProduct = document.createElement('div');
+        divElProduct.classList.add('shop__product');
 
-      let aElProductLink = document.createElement('a');
-      aElProductLink.classList.add('shop__link');
-      aElProductLink.href = shopdb.prodList[i].list[ranNum].ahref;
+        let aElProductLink = document.createElement('a');
+        aElProductLink.classList.add('shop__link');
+        aElProductLink.href = shopdb.prodList[i].list[ranNum].ahref;
 
-      let imgElProduct = document.createElement('img');
-      imgElProduct.classList.add('shop__img');
-      imgElProduct.src = shopdb.prodList[i].list[ranNum].src;
-      imgElProduct.alt = shopdb.prodList[i].list[ranNum].alt;
+        let imgElProduct = document.createElement('img');
+        imgElProduct.classList.add('shop__img');
+        imgElProduct.src = shopdb.prodList[i].list[ranNum].src;
+        imgElProduct.alt = shopdb.prodList[i].list[ranNum].alt;
 
-      let pElPrTop = document.createElement('p');
-      pElPrTop.classList.add('shop__text__top');
-      pElPrTop.textContent = shopdb.prodList[i].list[ranNum].text1;
+        let pElPrTop = document.createElement('p');
+        pElPrTop.classList.add('shop__text__top');
+        pElPrTop.textContent = shopdb.prodList[i].list[ranNum].text1;
 
-      let pElprBtm = document.createElement('p');
-      pElprBtm.classList.add('shop__text__bottom');
-      pElprBtm.textContent = shopdb.prodList[i].list[ranNum].text2;
+        let pElprBtm = document.createElement('p');
+        pElprBtm.classList.add('shop__text__bottom');
+        pElprBtm.textContent = shopdb.prodList[i].list[ranNum].text2;
 
-      aElProductLink.appendChild(imgElProduct);
-      aElProductLink.appendChild(pElPrTop);
-      aElProductLink.appendChild(pElprBtm);
-      divElProduct.appendChild(aElProductLink);
-      divElrow.appendChild(divElProduct)
+        aElProductLink.appendChild(imgElProduct);
+        aElProductLink.appendChild(pElPrTop);
+        aElProductLink.appendChild(pElprBtm);
+        divElProduct.appendChild(aElProductLink);
+        divElrow.appendChild(divElProduct)
+      }
     }
     rootEl.appendChild(divElrow)
   }
 }
 
+function pageBtn() {
+  let shopBtn = document.querySelectorAll('.shopBtn');
+  let currentPage = document.querySelector('.number__current');
+  let shopBox = document.querySelector('.shop__box');
+  currentPage.innerHTML = 1;
+  for (let i = 0; i < shopBtn.length; i += 1) {
+    shopBtn[i].addEventListener("click", function () { 
+      if (shopBtn[i].classList.contains('btn__prev')) {
+        if (parseInt(currentPage.innerHTML) <= 1) {
+          currentPage.innerHTML = 1;
+        } else {
+          shopBox.innerHTML = '';
+          createShopBox();
+          currentPage.innerHTML = +currentPage.textContent - 1;
+        }
+      } else {
+        if (parseInt(currentPage.innerHTML) >= shopdb.prodList.length) {
+          currentPage.innerHTML = +shopdb.prodList.length;
+        } else {
+          shopBox.innerHTML = '';
+          createShopBox()
+          currentPage.innerHTML = +currentPage.textContent + 1;
+        }
+      }
+    })
+  }
+  document.getElementsByClassName('number__all')[0].innerHTML = shopdb.prodList.length;
+}
+
+createShopLink();
 createShopBox();
+pageBtn();
+
+let divElNewsRow = document.createElement('div');
