@@ -51,9 +51,9 @@
 .shop__link{
   display: block;
 }
-/* .shop__link:hover{
+.underline{
   text-decoration: underline;
-} */
+}
 .shop__link__an.bold{
   font-weight: bold;
   padding: 5px;
@@ -67,6 +67,7 @@
  display: none;
 }
 .shop__row{
+  position: relative;
   display: block;
   content: '';
   clear: both;
