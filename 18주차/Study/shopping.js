@@ -62,3 +62,9 @@ function createShopBox() {
 }
 
 createShopBox();
+
+document.querySelector('.shopBt').addEventListener("click", function () {
+  if(this.classList.contains('btn__prev')){
+    document.querySelector
+  }
+})
