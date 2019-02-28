@@ -212,7 +212,7 @@ let shopdb = {
       name: '스타일난다',
       text1: '예쁨가득한봄',
       text2: '신상8%세일',
-      color: false,
+      color: true,
       ahref: 'newsTitle5',
     },
     {
