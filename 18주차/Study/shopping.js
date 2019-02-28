@@ -97,8 +97,58 @@ function pageBtn() {
   document.getElementsByClassName('number__all')[0].innerHTML = shopdb.prodList.length;
 }
 
+function createNews() {
+  let rootEl = document.querySelector('.news__box');
+  let ranCheck = [];
+  for (let i = 0; i < shopdb.newsList.length; i++) {    
+    let ranNum = Math.floor(Math.random() * shopdb.newsList.length);
+      if (ranCheck.indexOf(ranNum) > -1) {
+        i = i - 1;
+        continue;
+      } else {
+        ranCheck.push(ranNum);
+        let divElNewsRow = document.createElement('div');
+        divElNewsRow.classList.add('news__row');
+        let aElNews = document.createElement('a');
+        aElNews.classList.add('news__link');
+        aElNews.href = shopdb.newsList[ranNum].ahref;
+
+        let divElNewsName = document.createElement('div');
+        divElNewsName.classList.add('news__name', 'news__text_box');
+        divElNewsName.textContent = shopdb.newsList[ranNum].name;
+
+        let divElNewsContent = document.createElement('div');
+        divElNewsContent.classList.add('news__content', 'news__text_box');
+
+        let spanElNewsContentB = document.createElement('span');
+        spanElNewsContentB.classList.add('news__black');
+        spanElNewsContentB.textContent = shopdb.newsList[ranNum].text1;
+
+        let spanElNewsContentG = document.createElement('span');
+        spanElNewsContentG.textContent = shopdb.newsList[ranNum].text2;
+        if (shopdb.newsList[i].color === true) {
+          spanElNewsContentG.classList.add('news__green')
+        } else {
+          spanElNewsContentG.classList.add('news__black')
+        }
+        divElNewsContent.appendChild(spanElNewsContentB);
+        divElNewsContent.appendChild(spanElNewsContentG);
+        aElNews.appendChild(divElNewsName);
+        aElNews.appendChild(divElNewsContent);
+        divElNewsRow.appendChild(aElNews);
+
+        rootEl.appendChild(divElNewsRow); 
+      }      
+  }
+}
+
 createShopLink();
 createShopBox();
 pageBtn();
+createNews();
 
-let divElNewsRow = document.createElement('div');
+document.querySelector(".news__refresh").addEventListener("click", function(){
+  document.querySelector(".news__box").innerHTML = '';
+  createNews();
+})
+
