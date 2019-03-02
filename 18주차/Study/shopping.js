@@ -18,11 +18,45 @@ function createShopLink() {
     aEl.href = shopdb.titleList[i].ahref;
     shopLink.append(aEl);
   }
+
   shopLink.addEventListener("mouseover", function (e) {
-    console.log(e.target)
-    e.target.classList.toggle('underline');
+    // if(e.target.classList.contains('shop__link__an')){
+    //   e.target.classList.add('underline');
+    // }
+    doMouseUndelineEvt(e.target,'in')
   })
+  shopLink.addEventListener("mouseout", function (e) {
+    doMouseUndelineEvt(e.target,'out')
+    // if(e.target.classList.contains('shop__link__an')){
+    //   e.target.classList.remove('underline');
+    // }
+  })
+};
+
+function doMouseUndelineEvt(tar,evt){
+  if(tar.classList.contains('shop__link__an')){
+    if(evt =='out'){
+      tar.classList.remove('underline');
+    }else{
+      tar.classList.add('underline');
+    }
+  }
 }
+
+
+let config = {
+  width:'100px',
+  height:'120px',
+  position:"absolute",
+  width:'100px',
+  height:'120px',
+  position:"absolute",
+  left:"15px"
+}
+// function test(val){
+//   val.width
+// }
+// test(config)
 
 function createShopBox() {
   for (let i = 0; i < (shopdb.prodList.length); i++) {//로우
