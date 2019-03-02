@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+$textColor: #5d5f68;
+$backColor: #dddada;
+%title{
+  color: $textColor;
+  font-weight: normal;
+  font-size: 1.1em;
+}
+
+.coffee__search {
+  &__box {
+    width: 50%;
+    background-color: $backColor;
+    padding: 10px 0;
+  }
+
+  &__title {
+    @extend %title;
+    display: inline-block;
+    padding: 5px 10px;
+    vertical-align: middle;
+  }
+
+  &__input {
+    border: 1px solid $backColor;
+    border-radius: 5px;
+    padding: 5px 10px;
+    outline: none;
+  }
+  &__input:focus{
+    border-color: $textColor;
+  }
+
+  &__btn {
+    width: 65px;
+    height: 25px;
+    background-color: #ddd;
+    vertical-align: middle;
+  }
+}
+.coffee__select{
+  &__box{
+    padding: 10px 0;
+  }
+  &__title{
+    @extend %title;
+  }
+  &__list{
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: $backColor;
+    border-radius: 5px;
+    font-size: 0.9em;
+    cursor: pointer;
+  }
+  &__state{
+    .coffee__select__title{
+      display: inline-block;
+    }
+  }
+  &__type{
+    display: inline-block;
+    vertical-align: middle;
+    &:after{
+      display: block;
+      content: '';
+      clear:both;
+    }
+    .coffee__type{
+      float: left;
+      border: 1px solid $textColor;
+      width: 70px;
+      height: 25px;
+      text-align: center;
+      &.on{
+        background-color: $textColor;
+        color:$backColor;
+      }
+    }
+    #coffee__hot, #coffee__ice{
+      display: none;
+    }
+  }
+}
