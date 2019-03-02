@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>계산기함수</title>
+  <link rel="stylesheet" href="./caculator.css">
+</head>
+
+<body>
+  <h1>계산기</h1>
+  <form action="" id="calForm">
+    <div>
+      <input type="text" name="calValue">
+      <input type="submit" value="계산">
+    </div>
+
+    <div class="calDiv">
+        <label for="">오만원</label>
+        <input type="text" name="ohthou" data-name="calInput" data-value="50000">
+      </div>
+    <div class="calDiv">
+      <label for="">만원</label>
+      <input type="text" name="man" data-name="calInput" data-value="10000">
+    </div>
+    <div class="calDiv">
+      <label for="">오천원</label>
+      <input type="text" name="ohthou" data-name="calInput" data-value="5000" ></div>
+    <div class="calDiv">
+      <label for="">천원</label>
+      <input type="text" name="thousand" data-name="calInput" data-value="1000"></div>
+    <div class="calDiv">
+      <label for="">백원</label>
+      <input type="text" name="hundred" data-name="calInput" data-value="100"></div>
+    <div class="calDiv">
+      <label for="">나머지</label>
+      <input type="text" name="elseElse" data-name="calInputElse"></div>
+  </form>
+  <script src="caculator.js"></script>
+</body>
+
+</html>
