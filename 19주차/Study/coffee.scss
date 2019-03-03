@@ -10,10 +10,12 @@ $backColor: #dddada;
   font-weight: normal;
   font-size: 1.1em;
 }
-
+.wrap{
+  width: 50%;
+}
 .coffee__search {
   &__box {
-    width: 50%;
+    width: 100%;
     background-color: $backColor;
     padding: 10px 0;
   }
@@ -42,6 +44,18 @@ $backColor: #dddada;
     vertical-align: middle;
   }
 }
+
+.coffee__result{
+  &__menu{
+    width: 100%;
+    min-height: 150px;
+    border: 1px solid #ececec;
+    box-sizing: border-box;
+  }
+  &__list{
+    @extend .coffee__select__list;
+  }
+}
 .coffee__select{
   &__box{
     padding: 10px 0;
@@ -52,6 +66,7 @@ $backColor: #dddada;
   &__list{
     display: inline-block;
     padding: 5px 10px;
+    margin: 5px; 
     background-color: $backColor;
     border-radius: 5px;
     font-size: 0.9em;
@@ -81,8 +96,19 @@ $backColor: #dddada;
         color:$backColor;
       }
     }
-    #coffee__hot, #coffee__ice{
+    .coffee__hot, .coffee__ice{
       display: none;
     }
+  }
+}
+.coffee__order{
+  &__info{
+    min-height: 150px;
+    border: 1px solid #ececec;
+    box-sizing: border-box;
+    padding: 5px;
+  }
+  &__text{
+    color: $textColor;
   }
 }

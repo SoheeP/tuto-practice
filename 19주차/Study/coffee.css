@@ -7,8 +7,11 @@
   font-weight: normal;
   font-size: 1.1em; }
 
+.wrap {
+  width: 50%; }
+
 .coffee__search__box {
-  width: 50%;
+  width: 100%;
   background-color: #dddada;
   padding: 10px 0; }
 
@@ -32,12 +35,19 @@
   background-color: #ddd;
   vertical-align: middle; }
 
+.coffee__result__menu {
+  width: 100%;
+  min-height: 150px;
+  border: 1px solid #ececec;
+  box-sizing: border-box; }
+
 .coffee__select__box {
   padding: 10px 0; }
 
-.coffee__select__list {
+.coffee__select__list, .coffee__result__list {
   display: inline-block;
   padding: 5px 10px;
+  margin: 5px;
   background-color: #dddada;
   border-radius: 5px;
   font-size: 0.9em;
@@ -62,5 +72,14 @@
     .coffee__select__type .coffee__type.on {
       background-color: #5d5f68;
       color: #dddada; }
-  .coffee__select__type #coffee__hot, .coffee__select__type #coffee__ice {
+  .coffee__select__type .coffee__hot, .coffee__select__type .coffee__ice {
     display: none; }
+
+.coffee__order__info {
+  min-height: 150px;
+  border: 1px solid #ececec;
+  box-sizing: border-box;
+  padding: 5px; }
+
+.coffee__order__text {
+  color: #5d5f68; }
