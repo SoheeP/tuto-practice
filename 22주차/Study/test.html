@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .container{
+      min-height: 200px;
+      border: 1px solid #666;
+      margin-bottom: 15px;
+    }
+    .page__list{
+      border-bottom: 1px solid #ececec;
+      font-size: 14px;
+    }
+    .page__list:last-child{
+      border-bottom: none;
+    }
+    .page__list:after{
+      display: block;
+      content:'';
+      clear: both;
+    }
+    .page__inner{
+      padding: 5px;
+      float: left;
+    }
+  </style>
+</head>
+<body>
+  <select name="selList" id="selectList">
+    <option value="10">10개</option>
+    <option value="20">20개</option>
+    <option value="30">30개</option>
+  </select>
+  <div class="container"></div>
+  <form action="" id="pageForm">
+    <button class="pageBtn" name="page" value="0">1</button>
+    <button class="pageBtn" name="page" value="1">2</button>
+    <button class="pageBtn" name="page" value="2">3</button>
+    <button class="pageBtn" name="page" value="3">4</button>
+    <button class="pageBtn" name="page" value="4">5</button>
+  </form>
+  <div id="hello">ddsdd</div>
+
+  <div id="parent">qqqq
+    <div class="son">fff
+      <div class="sonson" hidden>gsgsg</div>
+    </div>
+    <div class="son">f2f2f2
+      <div class="sonson">gsg2s2g2</div>
+    </div>
+  </div>
+  <script src="./test.js"></script>
+</body>
+</html>
