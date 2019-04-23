@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="../common/default.css">
+  <link rel="stylesheet" href="./product_regi.css">
+
+</head>
+
+<body>
+
+  <div class="wrap">
+    <button form="optForm">전송</button>
+    <form action="" id="optForm">
+      <div class="opt__header">
+        <h1 class="opt__header_tx">옵션</h1>
+      </div>
+      <div class="opt__body">
+        <div class="opt__row">
+          <div class="opt__label">
+            옵션명 개수
+          </div>
+          <div class="opt__input_box">
+            <select name="optCount" id="optCount" class="opt_select">
+              <option value="1">1개</option>
+              <option value="2">2개</option>
+              <option value="3">3개</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="opt__row">
+          <div class="opt__label">
+            정렬 순서
+          </div>
+          <div class="opt__input_box">
+            <select name="" id="" class="opt_select">
+              <option value="">등록순</option>
+              <option value="">가나다순</option>
+              <option value="">낮은 가격순</option>
+              <option value="">높은 가격순</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="opt__row">
+          <div class="opt__label">
+            옵션입력
+          </div>
+          <div class="opt__input_box" id="optInsert">
+
+            <div class="opt__inner_row" >
+              <div class="opt__inner_input_box">
+                <div class="opt__inner_title">
+                  옵션 명
+                </div>
+                <div class="opt__inner_value">
+                  <input type="text" class="opt__inner_value_input opt__title_input" placeholder="예시:컬러" autocomplete="off">
+                </div>
+              </div>
+              <div class="opt__inner_input_box">
+                <div class="opt__inner_title">
+                  옵션값
+                </div>
+                <div class="opt__inner_value">
+                  <input type="text" class="opt__inner_value_input opt__value_input" placeholder="예시: 빨강,노랑(, 로 구분)" autocomplete="off">
+                </div>
+              </div>
+            </div>
+            
+            <div class="opt__input_abort_box">
+              <button class="opt__input_abort_box_bt">옵션 목록으로 적용</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="opt__list">
+        <div class="opt__list_title">
+          옵션목록 (총 0개)
+        </div>
+        <div class="opt__list_tab_box">
+          <button class="opt__list_select_delBt">선택삭제</button>
+
+          옵션가 <select name="" id="" class="opt_select">
+            <option value="">+</option>
+            <option value="">-</option>
+          </select>
+          <input type="text" class="opt__inner_value_input">
+
+          재고수량 <input type="text" class="opt__inner_value_input">
+
+          사용여뷰 <select name="" id="" class="opt_select">
+            <option value="">Y</option>
+            <option value="">N</option>
+          </select>
+
+          <button class="opt__list_mod_bt">선택목록 일괄수정</button>
+
+          
+        </div>
+
+        <div class="opt__list_table">
+          <div class="opt__list_table_title">
+            <div class="opt__list_table_title_th">
+              <input type="checkbox">
+            </div>
+            <div class="opt__list_table_title_th">
+              <div class="opt__list_table_opttitle_Box">옵션명</div>
+              <div class="opt__list_table_opttitle_Box"></div>
+            </div>
+            <div class="opt__list_table_title_th">
+              옵션가
+            </div>
+            <div class="opt__list_table_title_th">
+              재고수량
+            </div>
+            <div class="opt__list_table_title_th">
+              판매상태
+            </div>
+            <div class="opt__list_table_title_th">
+              관리코드
+            </div>
+            <div class="opt__list_table_title_th">
+              사용여부
+            </div>
+            <div class="opt__list_table_title_th">
+              삭제
+            </div>
+          </div>
+          <div class="opt__list_table">
+            <div class="opt__list_nodata">
+                데이터가 존재하지 않습니다.
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </form>
+
+  </div>
+  <script src="./product_regi.js"></script>
+</body>
+
+</html>
