@@ -28,7 +28,7 @@ const gulp = require('gulp'),
   nodemon = require('gulp-nodemon'),
   injectScss = require('gulp-inject-scss'),
   path = require('path'),
-  globbing = require('gulp-css-globbing'),
+  globbing = require('gulp-css-globbing'), 
   bulkSass = require('gulp-sass-glob-import'),
   moduleImporter = require('sass-module-importer'); 
 
