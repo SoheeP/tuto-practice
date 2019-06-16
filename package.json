@@ -1,0 +1,24 @@
+{
+  "name": "tuto-practice",
+  "version": "1.0.0",
+  "description": "2018년 10월 1일부터 시작한 과외의 과제 파일들이 있습니다.",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "^4.10.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SoheeP/tuto-practice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SoheeP/tuto-practice/issues"
+  },
+  "homepage": "https://github.com/SoheeP/tuto-practice#readme"
+}
