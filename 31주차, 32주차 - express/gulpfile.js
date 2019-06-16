@@ -30,7 +30,7 @@ const gulp = require('gulp'),
   path = require('path'),
   globbing = require('gulp-css-globbing'),
   bulkSass = require('gulp-sass-glob-import'),
-  moduleImporter = require('sass-module-importer');
+  moduleImporter = require('sass-module-importer'); 
 
 let node, cache = new Cache(), restart_called = false;
 
