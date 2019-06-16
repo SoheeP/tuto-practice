@@ -1,0 +1,60 @@
+// @mixin testif($w) {
+//   border: 1px solid #ddd;
+//   @if ($w<40) {
+//     width: $w+%;
+//     color: #ff0000;
+//   } @else {
+//     width: $w+%;
+//     color: blue;
+//   }
+// }
+
+
+.test {
+  // @include testif(70);
+  display: inline-block;
+}
+
+@for $i from 1 through 3 {
+  @if($i==3) {
+    .samList1 {
+      color: blue;
+    }
+  }
+
+  .samList#{$i} {
+    color: red;
+  }
+}
+
+
+
+@mixin kiziUU($i) {
+  &:nth-of-type(#{$i}) {
+    @for $i from 1 through 3 {
+      @if ($i%2==1) {
+        border: 1px solid red;
+      }
+
+      border: 1px solid #ddd;
+    }
+  }
+}
+// @mixin kiziTT($w, $s, $e){
+//   @for $i from $s through $e{
+//     @if($i % 2 ==1){
+//       & .box:nth-child(#{$i}){
+//         color: red;
+//         width: $W;
+//       }
+//     }
+//   }
+// } 이건 그냥 홀수를 찾는 for문
+
+.kiziUU {
+  display: inline-block;
+
+  .boX {
+    @include kiziUU(1);
+  }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script>
+    function timeNow() {
+      let time = new Date();
+      console.log(time)
+    }
+  </script>
+</head>
+
+<body>
+  <input type="button" id="timeNowBtn" value="timeNowBtn" onclick="timeNow()">
+
+  <div>
+    keydown
+    <input type="text" id="keyDown">
+  </div>
+  <div>
+    keyUp
+    <input type="text" id="keyUp">
+  </div>
+  <div>
+    keyPress
+    <input type="text" id="keyPress">
+  </div>
+
+  <form action="" id="changeForm">
+    <input type="text" value="hello">
+  </form>
+
+  <input type="text">
+  <input type="email">
+  <input type="password">
+  <input type="date">
+  <input type="radio">
+  <input type="checkbox">
+  <input type="submit">
+  <input type="button" value="버튼">
+
+  <div class="date"></div>
+  <script src="./test.js"></script>
+</body>
+
+</html>

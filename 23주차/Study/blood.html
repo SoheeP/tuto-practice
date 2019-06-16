@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>혈압</title>
+  <style>
+    .red{
+      color: red;
+    }
+    .green{
+      color: green;
+    }
+    .blue{
+      color: skyblue;
+    }
+  </style>
+</head>
+<body>
+  <form action="" id="blood">
+    <div class="highBlood">
+      <label for="highPressure">최고혈압: </label>
+      <input type="text" id="highPressure" name="highPressure">
+    </div>
+    <div class="lowBlood">
+      <label for="lowPressure">최저혈압: </label>
+      <input type="text" id="lowPressure" name="lowPressure">
+    </div>
+  </form>
+  <button form="blood">제출</button>
+  <div class="result"></div>
+  <script src="./blood.js"></script>
+</body>
+</html>

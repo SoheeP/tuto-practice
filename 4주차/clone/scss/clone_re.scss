@@ -1,0 +1,417 @@
+@import './_component';
+@import './_vari';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+li,
+ol {
+  list-style: none;
+}
+
+.wrap {
+  width: 1280px;
+  margin: auto;
+}
+
+.back_ani {
+  background: {
+    image: url(https://lonelyplanetwpnews.imgix.net/2018/02/1st-Max-Rive-8396.jpg);
+    size: cover;
+    position: left top;
+  }
+
+  animation: {
+    name: back;
+    duration: 60s;
+    timing-function: linear;
+    delay: 5s;
+    iteration-count: infinite;
+    direction: alternate;
+  }
+}
+
+.header {
+  padding: 80px 0 50px;
+
+  h1 {
+    @include title(4.5em, #fff, capitalize, center);
+    letter-spacing: -1px;
+    font-kerning: normal;
+  }
+
+  p {
+    @include title(1.2em, #fff, none, center);
+    font-weight: 500;
+  }
+}
+
+.img_100 {
+  position: relative;
+
+  img {
+    width: 100%;
+  }
+
+  p {
+    @include position(absolute, 50%, 50%);
+    @include trans_center(50%, 50%);
+    @include title(1.8em, #fff, capitalize, center);
+    font-weight: bold;
+  }
+}
+
+.video {
+  position: relative;
+
+  padding: {
+    bottom: 25.25%;
+    top: 30px;
+  }
+
+  margin-top: 1.2em;
+  margin-bottom: .3em;
+  height: 0;
+  overflow: hidden;
+
+  iframe,
+  object,
+  embed {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.top {
+  h1 {
+    @include title(1.6em, #fff, capitalize, center);
+    font-family: 'Oswald', sans-serif;
+
+    &::after {
+      display: block;
+      content: '';
+      position: relative;
+      left: 50%;
+      width: 100px;
+      height: 1px;
+      @include trans_center(50%, 0);
+      margin: 10px 0 15px 0;
+    }
+  }
+
+  p {
+    @include title(.75em, #999, uppercase, center);
+    letter-spacing: 3px;
+    font-weight: 200;
+  }
+
+}
+
+.process {
+  background-color: #fff;
+
+  .top {
+    padding: $wide_padding+$padding 0 $wide_padding;
+    h1 {
+      color: #000;
+      &::after{
+        background-color: $bgcolor;
+      }
+    }
+  }
+
+  .text_wrap {
+    width: 100%;
+    // width: 1216px;
+    padding: $WWide_padding 0px;
+    background-color:$lightbg;
+    p {
+      width: 92%;
+      margin: auto;
+      font-family: 'Roboto', sans-serif;
+      color: $caption_color;
+      font-size: 0.95em;
+      font-weight: 300;
+      letter-spacing: .5px;
+
+      &::selection,
+      &::-moz-selection {
+        background-color: #333;
+        color: #fff;
+      }
+    }
+  }
+}
+.gray{
+  padding: $wide_padding 0;
+  position: relative;
+  background-color: $bgcolor;
+}
+.black{
+  background-color: #000;
+}
+.container{
+  width: 1120px;
+  margin: auto;
+  &:nth-of-type(1){
+    margin-bottom: $padding;
+  }
+  .top{
+    padding: $wide_padding 0;
+    h1::after{
+      background-color: $lightbg;
+    }
+    p{
+      font-weight: bold;
+    }
+  }
+}
+.fig_wrap{
+  width: 100%;
+  overflow: hidden;
+  .top_img{
+    float: left;
+    width: 50%;
+    img{
+      display: block;
+      width: 100%;
+    }
+  }
+  &::after{
+    @include clear;
+  }
+}
+.content_wrap{
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  color: $caption_color;
+  img{
+    display: block;
+    width: 50%;
+  }
+  .c_wrap{
+    width: 82%;
+    margin: auto;
+  }
+  p.title{
+    @include title(1.8em, $caption_dark, none, left);
+    font-weight: 500;
+    padding: $wide_padding+$padding 0 $padding;
+  }
+  span{
+    display: block;
+    line-height: 1.6;
+    font-weight: 300;
+    font-size: 1.05em;
+  }
+  &::after{
+    @include clear;
+  }
+  &:nth-of-type(2){
+    background-color: $caption_dark;
+    .title{
+      color: #fff;
+      text-align: right;
+    }
+    span{
+      text-align: right;
+    }
+  }
+  .caption{
+    width: 50%;
+    height: 100%;
+  }
+}
+.contents{
+  padding-top: $padding+$wide_padding;
+}
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
+.white{
+  background-color: #fff;
+}
+
+
+.footer{
+  width: 100%;
+  padding: $wide_padding 0;
+  .icon{
+    margin: auto;
+    text-align: center;
+    
+  }
+  p{
+    @include title(1.1em, $footer_color, none, center);
+    padding-top: 20px;
+  }
+  a{
+    display: inline-block;
+    padding: 5px 4px 0px;
+    
+  }
+  ion-icon{
+    @include title(1.9em, $footer_color, none, center);
+    @include hover($lightbg);
+  }
+}
+
+@keyframes back {
+  0% {
+    background-position: left top;
+  }
+  ;
+
+  100% {
+    background-position: center top;
+  }
+  ;
+}
+
+@media screen and (max-width:1280px){
+  .wrap{
+    width: 100%;
+  }
+  .process{
+    .text_wrap{
+      p{
+        width: 96%;
+      }
+    }
+  }
+   .container{
+    width: 84%;
+  }
+  .content_wrap{
+    .c_wrap{
+      width: 76%;
+    }
+    span{
+      line-height: 1em;
+    }
+  }
+}
+@media screen and (max-width:980px){
+  .wrap {
+    width: 96%;
+  }
+  
+  .header {
+    padding: 80px 0 50px;
+  
+    h1 {
+      @include title(2.5em, #fff, capitalize, center);
+    }
+  
+    p {
+      @include title(1.2em, #fff, none, center);
+    }
+  }
+  
+  .img_100 {  
+    p {
+      @include title(1.2em, #fff, capitalize, center);
+    }
+  }
+  
+  .video {
+    padding: {
+      bottom: 35.25%;
+    }
+  }
+  
+  .process {
+    .text_wrap {
+      p {
+        width: 90%;
+      }
+    }
+  }
+  .gray{
+    padding: $padding 0 8px;
+  }
+  .container{
+    width: 100%;
+  }
+  .fig_wrap{
+    width: 100%;
+    .top_img{
+      float: none;
+      width: 100%;
+    }
+  }
+  .content_wrap{
+    img{
+      display: block;
+      width: 100%;
+    }
+    .c_wrap{
+      width: 86%;
+    }
+    p.title{
+      @include title(1.8em, $caption_dark, none, center);
+      padding: $wide_padding 0 $padding;
+    }
+    span{
+      display: block;
+      line-height: 1.6;
+      font-weight: 300;
+      font-size: 1.05em;
+      text-align: center;
+      padding-bottom: $wide_padding;
+    }
+    &:nth-of-type(2){
+      .title{
+        text-align: center;
+      }
+      span{
+        text-align: center;
+      }
+    }
+    .caption{
+      width: 100%;
+    }
+  }
+  .contents{
+    padding-top: 10px;
+  }
+}
+@media screen and (max-width:768px){
+  .content_wrap{
+    .c_wrap{
+      width: 82%;
+    }
+  }
+}
+@media screen and (max-width:704px){
+  .content_wrap{
+    .c_wrap{
+      width: 78%;    }
+  }
+}
+
+@media screen and (max-width:658px){
+  .content_wrap{
+    .c_wrap{
+      width: 76%;
+    }
+  }
+}
+@media screen and (max-width:480px){
+  .content_wrap{
+    p.title{
+      padding: 40px 0 $padding;
+    }
+  }
+}

@@ -76,13 +76,4 @@ typings/
 .fusebox/
 
 #DynamoDB Local files 
-<<<<<<< HEAD
 .dynamodb/ 
-=======
-.dynamodb/ 
-
-
-#개인적으로 제외하는 것
-kizi/
-sam2/
->>>>>>> origin/master

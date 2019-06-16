@@ -1,0 +1,63 @@
+body,
+div,
+h1,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.rel_box {
+  position: relative;
+  width: 400px;
+  height: 350px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+.center, .modal_head h4 {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.modal_box, .modal_head, .modal_foot {
+  width: 100%;
+}
+
+.modal_box {
+  position: absolute;
+  bottom: 0;
+  height: 180px;
+}
+
+.modal_head, .modal_foot {
+  background-color: green;
+}
+
+.modal_head {
+  position: relative;
+  height: 45px;
+}
+
+.modal_head h4 {
+  color: #fff;
+}
+
+.modal_foot {
+  position: relative;
+  bottom: 0;
+  height: 30px;
+}
+
+.vari_box {
+  color: red;
+}
+
+@media screen and (max-width: 860px) {
+  .vari_box {
+    color: blue;
+  }
+}

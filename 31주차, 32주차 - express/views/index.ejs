@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/dist/css/main.min.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <% if(locals.sess.user){ %>
+          <a href="/users/mypage/<%= (sess.user.name =='admin')?'admin':null %>">Mypage</a>
+          <a href="/auth/logout">Logout</a>
+        <% } else { %>
+          <a href="/auth/login">로그인</a>
+        <% } %>
+      </nav>
+    </header>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    
+    <a href="/about">about</a>
+  </body>
+</html>

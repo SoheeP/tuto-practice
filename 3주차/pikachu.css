@@ -1,0 +1,218 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrap {
+  width: 60%;
+  margin: 20px auto 0 auto;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.black {
+  background-color: black;
+}
+
+.ear_wrap_left {
+  position: absolute;
+  width: 282px;
+  transform: rotate(-30deg);
+  -ms-transform: translateX(-50%); /* IE 9 */
+  -webkit-transform: translateX(-50%); /* Safari 3-8 */
+  transform: translateX(-50%);
+}
+
+.ear {
+  position: relative;
+  width: 55px;
+  height: 200px;
+  border-top-right-radius: 140px 300px;
+  border-bottom-left-radius: 140px 240px;
+  overflow: hidden;
+}
+
+.ear_edge {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 160px;
+  bottom: 0;
+  border-top-left-radius: 80px;
+}
+
+.ear_wrap_right {
+  position: relative;
+  top: 42px;
+  width: 230px;
+  transform: scaleX(-1);
+  -ms-transform: scaleX(-1); /* IE 9 */
+  -webkit-transform: scaleX(-1); /* Safari 3-8 */
+  transform: scaleX(-1);
+}
+
+.face_wrap {
+  position: absolute;
+  width: 250px;
+  height: 230px;
+  border-top-left-radius: 111px 120px;
+  border-top-right-radius: 111px 120px;
+  border-bottom-left-radius: 100px 70px;
+  border-bottom-right-radius: 100px 70px;
+  background-color: yellow;
+}
+
+.eye {
+  position: absolute;
+  top: 100px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #000;
+}
+
+.pupil {
+  position: absolute;
+  top: 2px;
+  right: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.left {
+  left: 50px;
+}
+
+.right {
+  right: 50px;
+}
+
+.nose {
+  position: absolute;
+  left: 117px;
+  bottom: 80px;
+  width: 0px;
+  height: 0px;
+  border-top: 5px solid #000;
+  border-right: 6px solid transparent;
+  border-left: 6px solid transparent;
+  border-radius: 2px;
+  z-index: 10;
+}
+
+.chick_wrap {
+  position: relative;
+  top: 0;
+}
+
+.chick {
+  position: absolute;
+  top: 133px;
+  display: inline-block;
+  width: 68px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: orangered;
+  border: 3px solid yellow;
+}
+
+.chick.left {
+  left: 0;
+}
+
+.chick.right {
+  right: 0;
+}
+
+.mouth_wrap {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 100px;
+  height: 87px;
+  -ms-transform: translateX(-50%); /* IE 9 */
+  -webkit-transform: translateX(-50%); /* Safari 3-8 */
+  transform: translateX(-50%);
+}
+
+.m_right {
+  position: absolute;
+  right: 0;
+  z-index: 5;
+  -ms-transform: rotateY(-180deg); /*IE 9*/
+  -webkit-transform: rotateY(-180deg);/*Safari 3-8*/
+  transform: rotateY(-180deg);
+}
+
+.m_left {
+  position: absolute;
+  left: 0;
+  z-index: 5;
+}
+
+.mouth_top {
+  width: 50px;
+  height: 30px;
+  background-color: yellow;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 50%;
+  border-bottom-color: #000;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+}
+
+.mouth_wrap .shadow {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  width: 63px;
+  height: 66px;
+  overflow: hidden;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  -ms-transform: translateX(-50%); /* IE 9 */
+  -webkit-transform: translateX(-50%); /* Safari 3-8 */
+  transform: translateX(-50%);
+}
+.inner_deep_shadow{
+  position: absolute;
+  top: 20px;
+  width: 63px;
+  height: 120px;
+  border-radius: 50%;
+  box-shadow: 0 0px 0 30px rgb(148, 38, 75);
+  -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.inner_light_shadow{
+  position: absolute;
+  top: 36px;
+  left: 50%;
+  width: 33px;
+  height: 16px;
+  border-radius: 30%;
+  -ms-transform: translateX(-50%) rotate(180deg);; /* IE 9 */
+  -webkit-transform: translateX(-50%) rotate(180deg);; /* Safari 3-8 */
+  transform: translateX(-50%) rotate(180deg);;
+  box-shadow: 0px 0px 0 22px rgb(201, 69, 113);
+}
+.inner_bottom_shadow{
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  width: 54px;
+  height: 45px;
+  border-radius: 45%;
+  background-color: rgb(212, 105, 141);
+  -ms-transform: translateX(-50%); /* IE 9 */
+  -webkit-transform: translateX(-50%); /* Safari 3-8 */
+  transform: translateX(-50%);
+}

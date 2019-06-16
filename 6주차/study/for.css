@@ -1,0 +1,23 @@
+.test {
+  display: inline-block; }
+
+.samList1 {
+  color: red; }
+
+.samList2 {
+  color: red; }
+
+.samList1 {
+  color: blue; }
+
+.samList3 {
+  color: red; }
+
+.kiziUU {
+  display: inline-block; }
+  .kiziUU .boX:nth-of-type(1) {
+    border: 1px solid red;
+    border: 1px solid #ddd;
+    border: 1px solid #ddd;
+    border: 1px solid red;
+    border: 1px solid #ddd; }

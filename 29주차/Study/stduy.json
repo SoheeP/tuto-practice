@@ -1,0 +1,6 @@
+{
+  "name": "Tom",
+  "age": 17,
+  "marriage" : false,
+  "data": [2, 5, null]
+}

@@ -1,0 +1,114 @@
+@mixin clear {
+  &:after {
+    display: block;
+    clear: both;
+    content: '';
+  }
+}
+
+
+.wrap {
+  width: 80%;
+  margin: auto;
+}
+
+.header {
+  width: 100%;
+  padding-top: 15px;
+
+  &__title {
+    float: left;
+
+    &--gray {
+      @extend .header__title;
+      color: gray;
+    }
+  }
+
+  &__info {
+    float: right;
+  }
+
+  @include clear();
+}
+
+
+.report__item{
+  padding: 10px 0;
+}
+.report__label {
+  display: inline-block;
+  width: 35%;
+  &--gray {
+    @extend .report__label;
+    color: gray;
+  }
+}
+.report__input{
+  border: 1px solid #bbb;
+  border-radius: 2px;
+  box-sizing: border-box;
+  padding: 7px;
+}
+
+.report__btnArea{
+  width: 100%;
+  background-color: #efefef;
+  padding: 10px 0;
+  .report__creatBtn{
+    float: right;
+    background-color: #6e7d9a;
+    color:#fff;
+    border: #6e7d9a 1px solid;
+    padding: 5px 10px;
+    border-radius: 3px;
+    box-sizing: border-box;
+  }
+  @include clear();
+}
+
+.report__title {
+  @include clear();
+
+&__item {
+  float: left;
+  width: (100% / 4);
+  box-sizing: border-box;
+  text-align: center;
+  padding: 5px;
+
+  &-border {
+    $border-color:#d7dae2;
+    @extend .report__title__item;
+    background-color: #edf2f6;
+    border: {
+      top: 1px solid $border-color;
+      left: 1px solid $border-color;
+      bottom: 1px solid $border-color;
+    }
+    font-weight: bold;
+    color: #6e7d9a;
+
+    &:last-child {
+      border-right: 1px solid $border-color;
+    }
+  }
+}
+}
+
+.report__dataArea{
+  border: 1px solid #bbb;
+  box-sizing: border-box;
+  .report__list{
+    @include clear();
+    border-bottom: 1px solid #bbb;
+    &:last-of-type{
+      border-bottom: none;
+    }
+    &__name, &__address, &__email, &__etc{
+      float:left;
+      width:calc(100% / 4);
+      text-align: center;
+    }
+  }  
+}

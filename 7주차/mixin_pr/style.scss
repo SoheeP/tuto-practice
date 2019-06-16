@@ -1,0 +1,67 @@
+@import './component';
+@import './vari';
+
+body,
+div,
+h1,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.rel_box {
+  @include rel_box
+}
+
+.center {
+  @include rel_center;
+  text-align: center;
+}
+
+.modal {
+  $c_box: box;
+  $c_head: head;
+  $c_foot: foot;
+
+  &_#{$c_box},
+  &_#{$c_head},
+  &_#{$c_foot} {
+    width: 100%;
+  }
+
+  &_#{$c_box} {
+    position: absolute;
+    bottom: 0;
+    height: 180px;
+  }
+
+  &_#{$c_head},
+  &_#{$c_foot} {
+    background-color: green;
+  }
+
+  &_#{$c_head} {
+    position: relative;
+    height: 45px;
+
+    h4 {
+      @extend .center;
+      color: #fff;
+    }
+  }
+
+  &_#{$c_foot} {
+    position: relative;
+    bottom: 0;
+    height: 30px;
+  }
+}
+.vari_box{
+  @include media-color(pc);
+}
+
+@media screen and (max-width: 860px){
+  .vari_box{
+    @include media-color(mobile);
+  }
+}

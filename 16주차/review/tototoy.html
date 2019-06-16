@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>명단추가</title>
+  <link rel="stylesheet" href="./reset.css">
+  <link rel="stylesheet" href="./tototoy.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="wrap">
+      <div class="header">
+        <h3 class="header__title--gray">Report Bulider</h3>
+        <div class="header__info">
+          <p class="header__author">Author: <span class="header__author-name"></span></p>
+        </div>
+      </div>
+      <div class="report">
+        <form action="" class="report__form">
+          <div class="report__item">
+            <label class="report__label--gray" for="nameValue">Name: </label>
+            <input type="text" id="nameValue" class="report__input" name="name" value="add name">
+          </div>
+          <div class="report__item">
+            <label class="report__label--gray" for="addrValue">Address: </label>
+            <input type="text" id="addrValue" class="report__input" name="address" value="add address">
+          </div>
+          <div class="report__item">
+            <label class="report__label--gray" for="emailValue">Email: </label>
+            <input type="text" id="emailValue" class="report__input" name="email" value="add email">
+          </div>
+          <div class="report__item">
+            <label class="report__label--gray" for="etcValue">Etc: </label>
+            <input type="text" id="etcValue" class="report__input" name="etc" value="extra informaiton">
+          </div>
+          <div class="report__btnArea">
+            <input type="submit" name="submitBtn" value="Create Report" class="report__creatBtn">
+          </div>
+        </form>
+        <div class="report__dataArea">
+          <div class="report__title">
+            <div class="report__title__item-border">Name</div>
+            <div class="report__title__item-border">Address</div>
+            <div class="report__title__item-border">Email</div>
+            <div class="report__title__item-border">ETC.</div>
+          </div>
+          <ul class="report__ul">
+            <li class="report__list">
+              <div class="report__list__name">a</div>
+              <div class="report__list__address">b</div>
+              <div class="report__list__email">c</div>
+              <div class="report__list__etc">d</div>
+            </li>
+            <li class="report__list">
+              <div class="report__list__name">a</div>
+              <div class="report__list__address">b</div>
+              <div class="report__list__email">c</div>
+              <div class="report__list__etc">d</div>
+            </li>
+            <li class="report__list">
+              <div class="report__list__name">a</div>
+              <div class="report__list__address">b</div>
+              <div class="report__list__email">c</div>
+              <div class="report__list__etc">d</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./tototoy.js"></script>
+</body>
+
+</html>

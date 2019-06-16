@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>커피주문시스템 </title>
+  <link rel="stylesheet" href="./coffee.css">
+</head>
+
+<body>
+  <div class="wrap">
+    <h1 class="title">커피주문시스템</h1>
+    <form action="" id="coffeeSearchForm">
+      <div class="coffee__search__box">
+        <h3 class="coffee__search__title">메뉴 검색</h3>
+        <input type="text" name="searchValue" class="coffee__search__input">
+        <input type="submit" value="검색" class="coffee__search__btn">
+      </div>
+      <div class="coffee__result__box">
+        <h3 class="coffee__select__title">검색결과</h3>
+        <ul class="coffee__result__menu">
+          <li class="coffee__result__list">딸기 스무디</li>
+          <li class="coffee__result__list">자바칩 프라푸치노</li>
+        </ul>
+      </div>
+      </form>
+      <form action="" id="coffeeSelectForm">
+      <div class="coffee__select__box">
+        <h3 class="coffee__select__title">선택메뉴</h3>
+        <ul class="coffee__select__menu">
+          <li class="coffee__select__list">자바칩 프라푸치노</li>
+          <li class="coffee__select__list">카푸치노</li>
+        </ul>
+        <div class="coffee__select__state">
+          <h4 class="coffee__select__title">Hot / Ice</h4>
+          <div class="coffee__select__type">
+            <label for="coffeeHot" class="coffee__type">Hot</label>
+            <input type="radio" name="hotNcold" id="coffeeHot" class="coffee__hot" value="hot">
+            <label for="coffeeIce" class="coffee__type">Ice</label>
+            <input type="radio" name="hotNcold" id="coffeeIce" class="coffee__ice" value="cold">
+          </div>
+        </div>
+        <div class="coffee__select__count">
+          <h4 class="coffee__select__title">수량</h4>
+          <button class="coffee__count__down"> - </button>
+          <input type="text" class="coffee__count" value="1">
+          <button class="coffee__count__up"> + </button>
+        </div>
+        <div class="coffee__select__personal">
+        </div>
+      </div>
+      <div class="coffee__order__info">
+        <p class="coffee__order__text">
+          dtdtdsfadsfqwsadfsd
+        </p>
+      </div>
+      <div class="coffee__order__box">
+        <div class="coffee__order__price">
+          <p class="coffee__order__title">가격
+            <span class="coffee__order__total">000원</span>
+          </p>
+        </div>
+        <div class="coffee__order__btn">
+          <button class="coffee__ok" data-name="ok" type="submit" name="orderBt">OK</button>
+          <button class="coffee__mod">Modify</button>
+          <button class="coffee__cancel">Cancel</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <script src="./coffee.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.container{
+  position: relative;
+  width: 300px;
+  height: 250px;
+  overflow: hidden;
+}
+.slide_wrap{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 400%;
+  animation: slide 10s linear infinite;
+  
+  &:after{
+    display: block;
+    clear: both;
+    content: '';
+  }
+}
+.slide{
+  float: left;
+  width: 25%;
+  height: 250px;
+}
+.img1{
+  background-color: red;
+}
+.img2{
+  background-color: blue;
+}
+.img3{
+  background-color: #ddd;
+}
+
+.img4{
+  background-color: #00ff00;
+}
+@keyframes slide{
+  0% { margin-left: 0;}
+  10% { margin-left: 0;}
+  20% {margin-left: -300px}
+  30% {margin-left: -300px}
+  40% {margin-left: -600px}
+  50% {margin-left: -600px}
+  60% {margin-left: -900px;}
+  70% {margin-left: -900px;}
+  100%{ margin-left: 0;}
+}

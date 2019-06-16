@@ -1,0 +1,15 @@
+.row {
+  width: 100%; }
+  .row::after {
+    display: block;
+    clear: both;
+    content: ''; }
+
+.col-md-4 {
+  width: 33.33%;
+  float: left;
+  border: 1px solid #ddd;
+  box-sizing: border-box; }
+
+.col-md-12 {
+  width: 100%; }
