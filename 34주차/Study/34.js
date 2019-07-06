@@ -187,3 +187,60 @@ console.log(...numbers);
 // 1,2,3
 
 console.log(...[6,4,2]); 
+
+var dogs = document.getElementsByName('dog');
+dogs[1].value = 'corgi';
+dogs[1].nextSibling.nodeValue = "웰시코기";
+for(var i = 0 ; i < dogs.length ; i++){
+  console.log(i+ " 번째의 값 : " +dogs[i].value);
+};
+
+
+var fakeList = document.querySelectorAll('input[type="button"]');
+console.log(
+  fakeList
+);
+
+var newList = [];
+for(var i = 0; i < fakeList.length; i++){
+  newList.push(fakeList[i])
+}
+console.log(
+  newList.map(list => {
+    list.id = "hello";
+    return list
+  })
+);
+
+console.log(document.forms);
+console.log(document.anchors);
+console.log(document.links);
+
+console.log(
+  document.querySelector('.불침번').className
+);
+
+console.log(
+  document.getElementById('testLabel').htmlFor
+);
+
+document.getElementById('구글구글').href = "www.github.io";
+
+
+console.log(
+  document.getElementById('구글구글').getAttribute('href')
+);
+
+document.getElementById('구글구글').setAttribute('href', "ㅜㅜㅜㅜㅜㅜㅜㅜㅜ땡이라니")
+console.log(
+  document.getElementById('구글구글')
+);//console이 비동기라서 class붙이면서 같이 출력
+
+document.getElementById('구글구글').setAttribute("class", "히끅히끅 helloy")
+console.log(
+  document.getElementById('구글구글').hasAttribute('class')
+);
+
+console.log(
+  document.getElementById('구글구글').attributes
+);

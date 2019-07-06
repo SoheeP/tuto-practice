@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+  <style>
+    .box{
+      display: inline-block;
+      position: absolute;
+      padding: 10px;
+      background-color: blue;
+      color: white;
+      cursor: pointer;
+    }
+    .boxbox{
+      width: 100px;
+      height: 100px;
+      background: orange;
+      transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+    .on{
+      border-radius: 100%;
+      background: red;
+      transform: scale(0);
+    }
+  </style>
+</head>
+<body>
+  <div id="box">click me</div>
+  <button id="btn">호엥?</button>
+  <button id="btn2">호엥222?</button>
+  <div id="clickNremove">야아아아아아!!!!!!!!!!!!</div>
+  <div id="display"></div>
+  <div id="outer">outer
+    <div id="inner1">inner1</div>
+    <div id="inner2">inner2</div>
+  </div>
+  <button id="button">그냥 버튼</button>
+
+
+  <button id="up">나이 업</button>
+  <button id="handlebtn">ㅎㄴ들</button>
+
+  <div id="box2">Click memememememememe</div>
+  <div id="box3">Pick me Pick me up</div>
+
+  <div class="boxbox"></div>
+
+  <button id="box4">이벤트 버튼</button>
+
+  <p id="view"></p>
+  <script src="../../bundle.js"></script>
+  <script src="./36.js"></script>
+</body>
+</html>
