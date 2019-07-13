@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>드래그앤드롭</title>
+  <link rel="stylesheet" href="./dragNdrop.css">
+</head>
+<body>
+  <!-- <div draggable="true">드래그할 수 있습니다.</div> -->
+
+  <!-- <div id="dragbox" draggable="true">이것을 드래그하세요</div>
+  <div id="dropbox">이곳에 드롭하세요</div> -->
+
+  <input type="color" id="color" draggable="true">
+  <div id="dropbox">이곳에 드롭하세요</div>
+    <br><br><br>
+
+  <input type="file" multiple accept="image/*" id="uploadInput" >
+  <div id="previewer" class="previewerbox">
+    
+  </div>
+  <script src="../../../bundle.js"></script>
+  <script src="./dragNdrop.js"></script>
+</body>
+</html>

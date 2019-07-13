@@ -1,0 +1,24 @@
+#dragbox{
+  width: 150px;
+  border: 10px solid orange;
+}
+
+#dropbox{
+  width: 150px;
+  padding: 50px;
+  border: 8px dashed gray;
+}
+
+#color{
+  margin-bottom: 10px;
+}
+
+
+.previewerbox{
+  width: 200px;
+  height: 400px;
+}
+.image{
+  width: 100%;
+  height: 100%;
+}

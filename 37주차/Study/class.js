@@ -157,10 +157,45 @@ class Ball extends Circle1 {
     this.center.x += dx;
     this.center.y += dy;
   }
+  toString(){
+    var str = super.toString();
+    console.log(str);
+    return str.replace("Circle", "Ball")
+  }
 }
 
 var ball = new Ball({x: 0, y: 0}, 2);
-console.log(ball.toString());
-console.log(ball.area());
-ball.move(1, 2);
+// console.log(ball.toString());
+// console.log(ball.area());
+// ball.move(1, 2);
+// console.log(ball.toString());
+
+
+// console.clear();
+
+//컨스트럭터에 ㅁㅅㄷ? 넣고 상속?
+// class Hello {
+//   constructor(params) {
+//     //??초기화
+//     console.log('hellow ㅊㄱㅎ');
+//   }
+//   name(value){
+//     return value;
+//   }
+// }
+
+// class SonOfHello extends Hello{
+//   constructor(){
+//     super();
+//     console.log('SonOfHello');
+//   }
+//   methooood(val){
+//     console.log(this.name(val));
+//   }
+// }
+
+// var yahoo = new SonOfHello();
+// var yahoo1 = new SonOfHello();
+// yahoo.methooood("오징어...")
+
 console.log(ball.toString());
