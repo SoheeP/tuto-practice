@@ -1,0 +1,1 @@
+{"version":3,"sources":["pages/header.js"],"names":["header"],"mappings":"aAAA,IAAMA,OAAS","file":"header.js","sourcesContent":["const header = 'header';"],"sourceRoot":"../../src"}

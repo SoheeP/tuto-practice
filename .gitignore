@@ -34,6 +34,10 @@ build/Release
 
 # Dependency directories
 node_modules/
+./**/node_modules/*
+**/*/node_modules
+/**/*/node_modules
+/**/node_modules
 jspm_packages/
 
 # TypeScript v1 declaration files
@@ -76,13 +80,6 @@ typings/
 .fusebox/
 
 #DynamoDB Local files 
-<<<<<<< HEAD
 .dynamodb/ 
-=======
-.dynamodb/ 
-
-
-#개인적으로 제외하는 것
-kizi/
-sam2/
->>>>>>> origin/master
+38주차/Study/38.html
+38주차/Study/38.html

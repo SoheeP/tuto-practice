@@ -1,0 +1,1 @@
+{"version":3,"sources":["test.scss"],"names":[],"mappings":"AAAA,GACE,uCAAY,CAAZ,oCAAY,CAAZ,mCAAY,CAAZ,kCAAY,CAAZ,+BAAiC","file":"test.css","sourcesContent":["h1{\r\n  transform:  translate(-50%, -50%);\r\n}"],"sourceRoot":"../src"}
