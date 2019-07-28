@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,OAAO,CAAA;EACL,WAAW,EAAE,IAAI;CAClB;;AACD,AAAA,UAAU,CAAA;EACR,KAAK,EAAC,KAAK;EACX,WAAW,EAAE,IAAI;CAClB;;AAGD,AAAA,aAAa,CAAC;EACZ,OAAO,EAAE,KAAK;EACd,YAAY,EAAE,IAAI;EAClB,WAAW,EAAE,IAAI;CAClB",
+    "sources": [
+        "40-1.scss"
+    ],
+    "names": [],
+    "file": "40-1.css"
+}

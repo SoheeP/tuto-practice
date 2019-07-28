@@ -1,58 +1,123 @@
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 a {
   text-decoration: none;
   color: #111212;
-  cursor: context-menu; }
+  cursor: context-menu;
+}
 
 a:focus {
-  outline: 1px solid #ddd; }
+  outline: 1px solid #ddd;
+}
 
 .wrap {
   position: relative;
   width: 300px;
-  height: 300px; }
-  .wrap input {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); }
+  height: 300px;
+}
+
+.wrap input {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
 
 .back {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background-color: #3244aa; }
+  background-color: #3244aa;
+}
 
 .animation {
-  animation: breath 15s cubic-bezier(0.165, 0.84, 0.44, 1) infinite; }
+  -webkit-animation: breath 15s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+          animation: breath 15s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+}
+
+@-webkit-keyframes breath {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    background-color: #3244aa;
+  }
+  20% {
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+    background-color: #333e7e;
+  }
+  30% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    background-color: #6275aa;
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    background-color: #3244aa;
+  }
+  70% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    background-color: #333e7e;
+  }
+  80% {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+    background-color: #4758b4;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    background-color: #3244aa;
+  }
+}
 
 @keyframes breath {
   0% {
-    transform: scale(1);
-    background-color: #3244aa; }
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    background-color: #3244aa;
+  }
   20% {
-    transform: scale(0.6);
-    background-color: #333e7e; }
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+    background-color: #333e7e;
+  }
   30% {
-    transform: scale(0.8);
-    background-color: #6275aa; }
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    background-color: #6275aa;
+  }
   50% {
-    transform: scale(1);
-    background-color: #3244aa; }
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    background-color: #3244aa;
+  }
   70% {
-    transform: scale(0.5);
-    background-color: #333e7e; }
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    background-color: #333e7e;
+  }
   80% {
-    transform: scale(0.7);
-    background-color: #4758b4; }
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+    background-color: #4758b4;
+  }
   100% {
-    transform: scale(1);
-    background-color: #3244aa; } }
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    background-color: #3244aa;
+  }
+}
 
 .rect {
   width: 50px;
   height: 50px;
-  background-color: violet; }
+  background-color: violet;
+}
+/*# sourceMappingURL=focus.css.map */

@@ -1,0 +1,56 @@
+.left_menu .main:after {
+  display: block;
+  clear: both;
+  content: '';
+}
+
+a {
+  color: #000;
+}
+
+.title_en {
+  font-size: 2em;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.title_ko {
+  font-size: 2em;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-weight: 500;
+}
+
+#header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+}
+
+#header .logo {
+  display: inline-block;
+  width: 20%;
+}
+
+.left_menu {
+  display: inline-block;
+  width: 60%;
+}
+
+.left_menu .main_li {
+  float: left;
+}
+
+.left_menu .submenu .left {
+  float: left;
+  width: 30%;
+  height: 200px;
+}
+
+.right_menu {
+  display: inline-block;
+  width: 10%;
+}
+/*# sourceMappingURL=main.css.map */

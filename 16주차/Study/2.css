@@ -1,37 +1,49 @@
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 ul, ol {
-  list-style: none; }
+  list-style: none;
+}
 
 .list_wrap {
   width: 500px;
   margin-top: 30px;
-  box-shadow: 5px 5px 8px #ccc;
+  -webkit-box-shadow: 5px 5px 8px #ccc;
+          box-shadow: 5px 5px 8px #ccc;
   border: 1px solid #ccc;
-  box-sizing: border-box; }
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
 
 .list_title {
   color: #555;
-  background-color: #ddd; }
+  background-color: #ddd;
+}
 
 .todo_list {
   max-height: 500px;
-  overflow: auto; }
+  overflow: auto;
+}
 
 .todo_item {
   position: relative;
   border-bottom: 1px solid #555;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 5px 0 2px 0;
-  margin: 0 5px; }
-  .todo_item:last-child {
-    margin-bottom: 20px; }
+  margin: 0 5px;
+}
+
+.todo_item:last-child {
+  margin-bottom: 20px;
+}
 
 .todo_content {
   width: 80%;
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 .delete {
   position: absolute;
@@ -42,9 +54,13 @@ ul, ol {
   color: red;
   font-style: normal;
   cursor: pointer;
-  transform: translateY(-50%); }
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
 
 .checked {
   text-decoration: line-through;
   color: #ccc;
-  font-style: italic; }
+  font-style: italic;
+}
+/*# sourceMappingURL=2.css.map */

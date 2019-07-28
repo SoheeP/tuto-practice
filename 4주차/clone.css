@@ -1,29 +1,40 @@
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 ul,
 li,
 ol {
-  list-style: none; }
+  list-style: none;
+}
 
 .wrap {
   width: 1280px;
-  margin: auto; }
+  margin: auto;
+}
 
 .back_ani {
   background-image: url(https://lonelyplanetwpnews.imgix.net/2018/02/1st-Max-Rive-8396.jpg);
   background-size: cover;
   background-position: left top;
-  animation-name: back;
-  animation-duration: 60s;
-  animation-timing-function: linear;
-  animation-delay: 5s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate; }
+  -webkit-animation-name: back;
+          animation-name: back;
+  -webkit-animation-duration: 60s;
+          animation-duration: 60s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
 
 .trans h1 {
   color: #fff;
@@ -31,29 +42,39 @@ ol {
   letter-spacing: -1px;
   text-align: center;
   text-transform: capitalize;
-  font-kerning: normal; }
+  -webkit-font-kerning: normal;
+          font-kerning: normal;
+}
 
 .trans p {
   color: #fff;
   font-size: 1.2em;
   font-weight: 500;
-  text-align: center; }
+  text-align: center;
+}
 
 .text_wrap {
-  padding: 80px 10px 50px; }
+  padding: 80px 10px 50px;
+}
 
 .img_100 {
-  position: relative; }
-  .img_100 img {
-    width: 100%; }
-  .img_100 p {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 1.8em;
-    text-transform: capitalize;
-    font-weight: bold; }
+  position: relative;
+}
+
+.img_100 img {
+  width: 100%;
+}
+
+.img_100 p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 1.8em;
+  text-transform: capitalize;
+  font-weight: bold;
+}
 
 .video {
   position: relative;
@@ -61,83 +82,138 @@ ol {
   padding-top: 30px;
   margin-top: 1.2em;
   height: 0;
-  overflow: hidden; }
-  .video iframe, .video object, .video embed {
-    position: absolute;
-    bottom: 0;
-    left: 0; }
+  overflow: hidden;
+}
+
+.video iframe, .video object, .video embed {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
 
 section {
   background-color: gray;
-  padding-top: 30px; }
+  padding-top: 30px;
+}
 
 .process {
-  margin-top: -25px; }
-  .process .top {
-    padding: 50px 0;
-    background-color: #fff; }
-    .process .top h1 {
-      color: #000; }
-  .process .text_wrap {
-    background-color: #ddd; }
-  .process p {
-    color: #727272; }
-    .process p::selection, .process p::-moz-selection {
-      background-color: #333;
-      color: #fff; }
+  margin-top: -25px;
+}
+
+.process .top {
+  padding: 50px 0;
+  background-color: #fff;
+}
+
+.process .top h1 {
+  color: #000;
+}
+
+.process .text_wrap {
+  background-color: #ddd;
+}
+
+.process p {
+  color: #727272;
+}
+
+.process p::-moz-selection, .process p::-moz-selection {
+  background-color: #333;
+  color: #fff;
+}
+
+.process p::selection, .process p::-moz-selection {
+  background-color: #333;
+  color: #fff;
+}
 
 .black {
-  background-color: #000; }
-  .black .fig_wrap {
-    padding-top: 20px;
-    width: 100%; }
-  .black .top_img {
-    width: 50%;
-    float: left;
-    font-size: 0; }
-    .black .top_img img {
-      width: 100%; }
-  .black::after {
-    display: block;
-    clear: both;
-    content: ''; }
+  background-color: #000;
+}
+
+.black .fig_wrap {
+  padding-top: 20px;
+  width: 100%;
+}
+
+.black .top_img {
+  width: 50%;
+  float: left;
+  font-size: 0;
+}
+
+.black .top_img img {
+  width: 100%;
+}
+
+.black::after {
+  display: block;
+  clear: both;
+  content: '';
+}
 
 .top {
-  margin-top: 30px; }
-  .top h1 {
-    padding-top: 30px;
-    color: #fff;
-    text-transform: capitalize;
-    font-size: 2em;
-    text-align: center;
-    font-family: 'Oswald', sans-serif; }
-    .top h1::after {
-      display: block;
-      content: '';
-      position: relative;
-      left: 50%;
-      width: 130px;
-      height: 1px;
-      background-color: #999;
-      transform: translateX(-50%);
-      margin: 10px 0 15px 0; }
-  .top p {
-    text-transform: uppercase;
-    letter-spacing: 8px;
-    font-weight: bold;
-    font-size: 0.75em;
-    color: gray;
-    text-align: center; }
+  margin-top: 30px;
+}
+
+.top h1 {
+  padding-top: 30px;
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 1.8em;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+}
+
+.top h1::after {
+  display: block;
+  content: '';
+  position: relative;
+  left: 50%;
+  width: 130px;
+  height: 1px;
+  background-color: #999;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin: 10px 0 15px 0;
+}
+
+.top p {
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  font-weight: bold;
+  font-size: 0.75em;
+  color: gray;
+  text-align: center;
+}
 
 .container {
-  width: 100%; }
-  .container .content_wrap img {
-    width: 50%; }
-  .container .caption.white {
-    background-color: #fff; }
+  width: 100%;
+}
+
+.container .content_wrap img {
+  width: 50%;
+}
+
+.container .caption.white {
+  background-color: #fff;
+}
+
+@-webkit-keyframes back {
+  0% {
+    background-position: left top;
+  }
+  100% {
+    background-position: center top;
+  }
+}
 
 @keyframes back {
   0% {
-    background-position: left top; }
+    background-position: left top;
+  }
   100% {
-    background-position: center top; } }
+    background-position: center top;
+  }
+}
+/*# sourceMappingURL=clone.css.map */

@@ -1,17 +1,21 @@
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 ul,
 ol {
-  list-style: none; }
+  list-style: none;
+}
 
 .phone__box {
   position: relative;
   width: 550px;
   height: 800px;
-  margin: auto; }
+  margin: auto;
+}
 
 .phone__in_box {
   position: absolute;
@@ -19,53 +23,66 @@ ol {
   height: 473px;
   left: 48.5%;
   top: 49%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   z-index: 10;
   overflow: auto;
   padding: 10px;
-  font-size: 12px; }
+  font-size: 12px;
+}
 
 .phone__tle {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%); }
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
 
 .phone__img__box {
-  width: 100%; }
-  .phone__img__box:after {
-    display: block;
-    clear: both;
-    content: ''; }
+  width: 100%;
+}
+
+.phone__img__box:after {
+  display: block;
+  clear: both;
+  content: '';
+}
 
 .phone__img_left {
   width: 50%;
-  float: left; }
+  float: left;
+}
 
 .phone__img_right {
   width: 50%;
-  float: right; }
+  float: right;
+}
 
 .phone__img {
-  width: 100%; }
+  width: 100%;
+}
 
 .file__con:after {
   display: block;
   content: ' ';
-  clear: both; }
+  clear: both;
+}
 
 .file__box {
   float: left;
   width: calc(100% / 3);
   height: 100px;
-  padding: 5px; }
+  padding: 5px;
+}
 
 .file__label {
   display: block;
   position: relative;
   height: 100%;
   cursor: pointer;
-  background: #ececec8a; }
+  background: #ececec8a;
+}
 
 .file__label:after {
   content: '+';
@@ -73,8 +90,11 @@ ol {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   font-size: 30px;
   font-weight: 100;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  color: #7e7e7e8a; }
+  color: #7e7e7e8a;
+}
+/*# sourceMappingURL=card.css.map */

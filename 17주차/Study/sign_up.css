@@ -1,8 +1,10 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  list-style: none; }
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+}
 
 /* .wrap{
   width: 1200px;
@@ -11,13 +13,15 @@
 .signup__form {
   width: 400px;
   margin: 70px auto;
-  text-align: center; }
+  text-align: center;
+}
 
 .signup__input {
   width: 100%;
   border-radius: 5px;
   border: 1px solid #ececec;
-  padding: 10px 5px; }
+  padding: 10px 5px;
+}
 
 .signup__bt {
   display: inline-block;
@@ -28,42 +32,52 @@
   cursor: pointer;
   padding: 10px 5px;
   font-size: 18px;
-  margin-top: 20px; }
+  margin-top: 20px;
+}
 
 .signup__box {
   float: left;
   width: 50%;
   padding: 10px 5px;
   font-size: 18px;
-  margin-top: 20px; }
+  margin-top: 20px;
+}
 
 .signup__bt {
   display: inline-block;
   border-radius: 5px;
   background: #1c7c80;
   color: #fff;
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 .signup__title {
   font-size: 35px;
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+}
 
 .signup__labal {
   display: block;
   text-align: left;
-  margin-top: 10px; }
+  margin-top: 10px;
+}
 
 .favor_con:after {
   content: '';
   display: block;
-  clear: both; }
+  clear: both;
+}
 
 .favor__checkbox {
-  margin-right: 5px; }
+  margin-right: 5px;
+}
 
 .faver_box {
   width: calc(100% / 5);
-  float: left; }
+  float: left;
+}
 
 .signup__left_box {
-  text-align: left; }
+  text-align: left;
+}
+/*# sourceMappingURL=sign_up.css.map */

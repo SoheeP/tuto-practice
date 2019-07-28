@@ -1,23 +1,32 @@
 .test {
-  display: inline-block; }
+  display: inline-block;
+}
 
 .samList1 {
-  color: red; }
+  color: red;
+}
 
 .samList2 {
-  color: red; }
+  color: red;
+}
 
 .samList1 {
-  color: blue; }
+  color: blue;
+}
 
 .samList3 {
-  color: red; }
+  color: red;
+}
 
 .kiziUU {
-  display: inline-block; }
-  .kiziUU .boX:nth-of-type(1) {
-    border: 1px solid red;
-    border: 1px solid #ddd;
-    border: 1px solid #ddd;
-    border: 1px solid red;
-    border: 1px solid #ddd; }
+  display: inline-block;
+}
+
+.kiziUU .boX:nth-of-type(1) {
+  border: 1px solid red;
+  border: 1px solid #ddd;
+  border: 1px solid #ddd;
+  border: 1px solid red;
+  border: 1px solid #ddd;
+}
+/*# sourceMappingURL=for.css.map */

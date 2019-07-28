@@ -1,47 +1,59 @@
 .control:checked ~ .ttt {
-  color: red; }
+  color: red;
+}
 
 .target {
   color: orange;
-  background-color: pink; }
+  background-color: pink;
+}
 
 .menubar {
-  width: 400px; }
-  .menubar div {
-    width: 90px;
-    float: left;
-    border: 1px solid #ddd;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    padding: 5px 10px;
-    background: powderblue; }
-  .menubar::after {
-    display: block;
-    clear: both;
-    content: ''; }
+  width: 400px;
+}
+
+.menubar div {
+  width: 90px;
+  float: left;
+  border: 1px solid #ddd;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 5px 10px;
+  background: powderblue;
+}
+
+.menubar::after {
+  display: block;
+  clear: both;
+  content: '';
+}
 
 .square {
   width: 150px;
   height: 150px;
   background-color: #ddd;
   -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out; }
+  transition: all .5s ease-in-out;
+}
 
 .box1 {
   color: #000;
-  border: 1px solid #000; }
+  border: 1px solid #000;
+}
 
 .box2 {
   color: #000;
-  border: 1px solid #000; }
+  border: 1px solid #000;
+}
 
 .box3 {
   color: #000;
-  border: 1px solid #000; }
+  border: 1px solid #000;
+}
 
 .box4 {
   color: #000;
-  border: 1px solid #000; }
+  border: 1px solid #000;
+}
 
 @media screen and (max-width: 800px) {
   .menubar div {
@@ -52,11 +64,15 @@
     box-sizing: border-box;
     padding: 5px;
     background: red;
-    color: #fff; }
+    color: #fff;
+  }
   .square {
     width: 50px;
     height: 50px;
     border-radius: 50%;
     background-color: #d31145;
     -webkit-transform: rotate(45deg);
-    transform: rotate(45deg); } }
+    transform: rotate(45deg);
+  }
+}
+/*# sourceMappingURL=if_pr.css.map */

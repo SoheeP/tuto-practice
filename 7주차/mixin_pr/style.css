@@ -11,7 +11,8 @@ p {
   width: 400px;
   height: 350px;
   border: 1px solid #ddd;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .center, .modal_head h4 {
@@ -61,3 +62,4 @@ p {
     color: blue;
   }
 }
+/*# sourceMappingURL=style.css.map */
