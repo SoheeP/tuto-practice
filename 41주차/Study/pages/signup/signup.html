@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>signup</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
+
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+  <!-- custom css -->
+  <link rel="stylesheet" href="./../../lib/bootstrap-3.3.2-dist/css/bootstrap_custom.css">
+  <link rel="stylesheet" href="./signup.css">
+
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://momentjs.com/downloads/moment.js"></script>
+</head>
+
+<body>
+  <!-- SECTION: NAV //include-->
+  <div class="container-fluid">
+    <header>
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Home</a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li class="nav_list about"><a href="#">About <span class="sr-only">(current)</span></a></li>
+              <li class="nav_list policy"><a href="#">Policy</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="./pages/login.html" class="login_link"><i class="fas fa-user-circle"></i></a></li>
+              <li><a href="./pages/signup/signup.html" class="login_link"><i class="fas fa-sign-in-alt"></i></a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+    </header>
+  </div>
+
+  <!-- SECTION: 1 -->
+  <div class="container">
+    <section class="signup__section">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="signup__wrap">
+            <h1 class="signup__title">SIGN UP</h1>
+            <form action="">
+              <div class="form-group signup__form__group">
+                <div class="row no_margin">
+                  <div class="col-md-9 no_padding">
+                    <!-- <label for="exampleInputEmail1">이메일 주소</label> -->
+                    <input type="email" class="form-control" id="inputEmail" placeholder="email">
+                  </div>
+                  <div class="col-md-3 no_padding">
+                    <button type="button" class="btn btn-default  signup__btn valid">validation</button>
+                  </div>
+                </div>
+                <span class="signup__alert_icon email">
+                    <i class="fas fa-exclamation-circle"></i>
+                </span>
+              </div>
+              <div class="form-group valid__info_box signup__form__group">
+                <p class="signup__valid__tx">이메일주소로 전송된 인증번호를 입력해주세요.</p>
+                <input type="text" class="form-control signup__valid__input">
+                <button type="submit" class="btn btn-default">valid</button>
+                <span id="vaildTimer"></span>
+
+                <span class="signup__alert_icon valid">
+                    <i class="fas fa-exclamation-circle"></i>
+                </span>
+              </div>
+              <div class="form-group signup__form__group">
+                <!-- <label for="exampleInputPassword1">암호</label> -->
+                <input type="password" class="form-control" id="inputPassword" placeholder="password">
+
+                <span class="signup__alert_icon password">
+                    <i class="fas fa-exclamation-circle"></i>
+                </span>
+              </div>
+              <div class="form-group signup__form__group">
+                <!-- <label for="exampleInputPassword1"></label> -->
+                <input type="password" class="form-control" id="inputPasswordConfirm" placeholder="password confirm">
+
+                <span class="signup__alert_icon confirm">
+                    <i class="fas fa-exclamation-circle"></i>
+                </span>
+              </div>
+              <div class="signup__box">
+                <button type="submit" class="btn btn-primary signup__btn signup">Sign up</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="./signup.js"></script>
+</body>
+
+</html>

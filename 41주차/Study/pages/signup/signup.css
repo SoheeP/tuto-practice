@@ -1,0 +1,68 @@
+body {
+  margin-top: 60px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+}
+
+.signup__title {
+  font-weight: bold;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 80px;
+}
+
+.signup__wrap {
+  width: 400px;
+  margin: auto;
+}
+
+.signup__box {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.signup__btn.signup {
+  width: 150px;
+}
+
+.signup__btn.valid {
+  width: 100%;
+}
+
+.signup__valid__input {
+  display: inline-block;
+  width: 80px;
+}
+
+.signup__valid__tx {
+  margin: 0;
+  font-size: 12px;
+  color: #A00000;
+}
+
+.valid__info_box {
+  display: none;
+}
+
+.form-group.signup__form__group {
+  position: relative;
+  padding-right: 20px;
+}
+
+.signup__alert_icon {
+  display: none;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: #d3465d;
+  cursor: pointer;
+}
+/*# sourceMappingURL=signup.css.map */

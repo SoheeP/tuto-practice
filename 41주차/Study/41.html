@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
+
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+  <!-- custom css -->
+  <link rel="stylesheet" href="./lib/bootstrap-3.3.2-dist/css/bootstrap_custom.css">
+  <link rel="stylesheet" href="./41.css">
+
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://momentjs.com/downloads/moment.js"></script>
+</head>
+
+<body>
+  <!-- SECTION: NAV //include-->
+  <div class="container-fluid">
+    <header>
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Home</a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li class="nav_list about"><a href="#">About <span class="sr-only">(current)</span></a></li>
+              <li class="nav_list policy"><a href="#">Policy</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="./pages/login.html" class="login_link"><i class="fas fa-user-circle"></i></a></li>
+              <li><a href="./pages/signup/signup.html" class="login_link"><i class="fas fa-sign-in-alt"></i></a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+    </header>
+  </div>
+
+  <!-- SECTION: 1 -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="slideBox">
+          <div class="slider">
+            <div>
+              <div class="main_img"></div>
+            </div>
+            <div>
+              <h3>2</h3>
+            </div>
+            <div>
+              <h3>3</h3>
+            </div>
+            <div>
+              <h3>4</h3>
+            </div>
+            <div>
+              <h3>5</h3>
+            </div>
+            <div>
+              <h3>6</h3>
+            </div>
+          </div>
+          <span class="slide_arrow prev"><i class="fas fa-arrow-left"></i></span>
+          <span class="slide_arrow next"><i class="fas fa-arrow-right"></i></span>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION: 2 -->
+  <div class="container">
+    <section class="">
+      <div class="row section sec__2">
+        <div class="col-md-4 main_img_box">
+          <div class="main_img_controler">
+            <img src="./img/section2_img-1.jpg" alt="" class="sec__2-img one">
+            <div class="main_img_info_tx">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci
+              obcaecati, repudiandae quam at praesentium quisquam mollitia voluptatem,</div>
+          </div>
+        </div>
+        <div class="col-md-4 main_img_box">
+          <div class="main_img_controler">
+            <img src="./img/section2_img-2.jpg" alt="" class="sec__2-img two">
+            <div class="main_img_info_tx">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci
+              obcaecati, repudiandae quam at praesentium quisquam mollitia voluptatem,</div>
+          </div>
+        </div>
+        <div class="col-md-4 main_img_box">
+          <div class="main_img_controler">
+            <img src="./img/section2_img-3.jpg" alt="" class="sec__2-img three">
+            <div class="main_img_info_tx">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci
+              obcaecati, repudiandae quam at praesentium quisquam mollitia voluptatem,</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- SECTION: 3 -->
+  <div class="container">
+    <section class="section sec__3">
+      <div class="row">
+        <div class="col-md-6 main_img_box sec__3">
+          <figure class="sec__3 main_img_controler">
+            <img src="./img/section_3_img.jpg" alt="" class="sec__2-img one">
+          </figure>
+        </div>
+        <div class="col-md-6">
+          <h3 class="sec__3 title_tx">Title - information</h3>
+          <p class="sec__3 para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, perferendis
+            beatae? Porro doloremque ullam, non nobis id libero explicabo optio, ab labore ipsum minima. Reprehenderit
+            aspernatur rerum nesciunt beatae ducimus.</p>
+          <p class="sec__3 para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, perferendis
+            beatae? Porro doloremque ullam, non nobis id libero explicabo optio, ab labore ipsum minima. Reprehenderit
+            aspernatur rerum nesciunt beatae ducimus.</p>
+          <p class="sec__3 para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, perferendis
+            beatae? Porro doloremque ullam, non nobis id libero explicabo optio, ab labore ipsum minima. Reprehenderit
+            aspernatur rerum nesciunt beatae ducimus.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- SECTION: 4 -->
+  <!-- Small modal -->
+
+  <div class="container-fluid">
+    <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                aria-hidden="true">×</span></button>
+            <h4 class="modal-title" id="mySmallModalLabel">Email Confirm<a class="anchorjs-link"
+                href="#mySmallModalLabel"><span class="anchorjs-icon"></span></a></h4>
+          </div>
+          <div class="modal-body">
+            <p class="modal-tx">입력하신 이메일 주소가 다음과 같습니까?</p>
+            <div id="modal-userEmail">
+
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button id="form_ok" type="button" class="btn btn-primary">OK</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="section sec__4">
+      <div class="row">
+        <div class="col-md-12">
+          <form action="" id="email_form" class="navbar-form mail__form" role="search">
+            <div class="form-group">
+              <input type="email" class="form-control mail__input" placeholder="Email..">
+            </div>
+            <button type="submit" class="btn btn-default mail__btn" data-toggle="modal"
+              data-target=".bs-example-modal-sm">Submit</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- SECTION: FOOTER // include-->
+  <footer class="section footer-classic context-dark bg-image" style="background: #2d3246;">
+    <div class="container">
+      <div class="row row-30">
+        <div class="col-md-4 col-xl-5">
+          <div class="pr-xl-4">
+            <p>We are an award-winning creative agency, dedicated to the best result in web design, promotion,
+              business consulting, and marketing.</p>
+            <!-- Rights-->
+            <p class="rights"><span>©  </span><span
+                class="copyright-year">2018</span><span> </span><span>Waves</span><span>. </span><span>All Rights
+                Reserved.</span></p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <h5>Contacts</h5>
+          <dl class="contact-list">
+            <dt>Address:</dt>
+            <dd>798 South Park Avenue, Jaipur, Raj</dd>
+          </dl>
+          <dl class="contact-list">
+            <dt>email:</dt>
+            <dd><a href="mailto:#">dkstudioin@gmail.com</a></dd>
+          </dl>
+          <dl class="contact-list">
+            <dt>phones:</dt>
+            <dd><a href="tel:#">+91 7568543012</a> <span>or</span> <a href="tel:#">+91 9571195353</a>
+            </dd>
+          </dl>
+        </div>
+        <div class="col-md-4 col-xl-3">
+          <h5>Links</h5>
+          <ul class="nav-list">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contacts</a></li>
+            <li><a href="#">Pricing</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="info_right">
+        © 2018 Waves. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+  <script src="./41.js"></script>
+</body>
+
+</html>
